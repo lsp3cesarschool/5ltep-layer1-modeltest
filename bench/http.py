@@ -1,8 +1,7 @@
 """HTTP for the benchmark: one keep-alive session, fast failure on connection refusals.
 
-Same rule as the Layer 1 toolkit (lesson from the Recife portal, 01/10/2026): seen from GitHub's
-runners, some servers intermittently refuse new connections; reusing connections and giving a
-connection 15 s (an answer, longer) avoids minutes lost per refusal.
+Same rule as the Layer 1 toolkit: some servers intermittently refuse new connections; reusing
+connections and giving a connection 15 s (an answer, longer) avoids minutes lost per refusal.
 """
 
 import time
