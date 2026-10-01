@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+message: "If you use this toolkit or its results, please cite the master's thesis it is part of (preferred citation below)."
+title: "5LTEP-L1 Model Benchmark: local LLMs for PDF data dictionaries"
+abstract: >-
+  Monthly benchmark that picks the local LLM (Ollama, CPU-only GitHub
+  Actions runner) used by 5L-TEP Layer 1 to turn PDF data dictionaries of
+  open government data portals into field lists: staged evaluation (triage on
+  a stratified sample, confirmation of finalists on the whole gold set), a
+  gold set built from the public results of the Layer 1 instances (real PDFs
+  confirmed by the published file's header, and declared schemas rendered in
+  harder layouts), name-F1, exact match and Levenshtein metrics, a monthly
+  runner budget and a paired bootstrap switch rule. Part of the master's
+  thesis cited below.
+type: software
+authors:
+  - family-names: Pinheiro
+    given-names: Luciano Santos
+    affiliation: "CESAR School, Recife, Brazil"
+    email: lsp3@cesar.school
+  - family-names: Sérgio
+    given-names: Anderson Tenório
+    affiliation: "CESAR School, Recife, Brazil"
+    email: ats@cesar.school
+repository-code: "https://github.com/lsp3cesarschool/5ltep-layer1-modeltest"
+url: "https://github.com/lsp3cesarschool/5ltep-layer1-modeltest"
+license: MIT
+version: 0.1.0
+date-released: 2026-10-01
+keywords:
+  - data quality
+  - schema validation
+  - Table Schema
+  - Frictionless Data
+  - data dictionary
+  - trust engineering
+  - open government data
+  - CKAN
+  - FAIR
+preferred-citation:
+  type: thesis
+  thesis-type: "Master's thesis"
+  title: "Engenharia da Confiança (5L-TEP) Aplicada a Dados Abertos do IBAMA: Automação, Inteligência Artificial e Human-in-the-Loop para Avaliação da Qualidade de Big Data através da Plataforma CUPIM"
+  authors:
+    - family-names: Pinheiro
+      given-names: Luciano Santos
+      email: lsp3@cesar.school
+  institution:
+    name: "CESAR School, Programa de Pós-Graduação em Engenharia de Software"
+    city: Recife
+    country: BR
+  year: 2027
+  notes: "In preparation. Advisor: Prof. Anderson Tenório Sérgio (ats@cesar.school)."

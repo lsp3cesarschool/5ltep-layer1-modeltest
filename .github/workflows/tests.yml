@@ -1,0 +1,35 @@
+name: Tests
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['results/**']
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.10', '3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/checkout@v5
+        with:
+          repository: lsp3cesarschool/5ltep-layer1
+          path: upstream
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: 'pip'
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt -r upstream/requirements.txt
+          pip install pytest-github-actions-annotate-failures
+      - name: Run tests
+        run: pytest tests/ -v --tb=short

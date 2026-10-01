@@ -1,0 +1,45 @@
+name: Build gold
+
+# Rebuilds gold/ from the public results of the Layer 1 instances (pinned to their current
+# commits). Manual on purpose: a new gold set invalidates every cached result, so it is rebuilt
+# when the instances have new confirmed PDFs or schemas, not on a schedule. Runs no model.
+on:
+  workflow_dispatch:
+    inputs:
+      real:
+        description: 'Real cases (PDFs confirmed by the file header)'
+        default: '12'
+      synthetic:
+        description: 'Declared schemas rendered in every synthetic layout'
+        default: '6'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+      - name: Build
+        env:
+          REAL: ${{ inputs.real }}
+          SYN: ${{ inputs.synthetic }}
+        run: |
+          [[ "$REAL" =~ ^[0-9]{1,3}$ && "$SYN" =~ ^[0-9]{1,3}$ ]] || { echo "::error::numbers only"; exit 1; }
+          python gold/build_gold.py --real "$REAL" --synthetic "$SYN"
+      - name: Commit
+        run: |
+          git config user.name "5L-TEP L1 Model Benchmark Bot"
+          git config user.email "5ltep-l1-modeltest-bot@users.noreply.github.com"
+          git add gold/
+          git diff --cached --quiet || git commit -m "gold: rebuilt from the Layer 1 instances [$(date -u +%Y-%m-%dT%H:%M:%SZ)]"
+          git pull --rebase --autostash
+          git push

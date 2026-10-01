@@ -1,0 +1,70 @@
+{
+  "_comment": "Candidates of the Layer 1 model benchmark (PDF data dictionaries -> field lists). 'entries' are curated; models found by bench/discover.py are added automatically (results/discovered.json). Only Ollama: it is what production runs. 'experiment': true entries are measured but never recommended.",
+  "production": {
+    "backend": "ollama",
+    "model": "qwen3:8b",
+    "options": {
+      "think": false
+    },
+    "since": "2026-10-01",
+    "previous": null
+  },
+  "selection": {
+    "triage_cases": 12,
+    "finalists": 3,
+    "confirm_shards": 2,
+    "min_valid_rate": 0.9,
+    "min_coverage": 0.9,
+    "max_call_seconds": 1800,
+    "monthly_budget_hours": 40,
+    "expected_pdfs_per_month": 150,
+    "switch_margin_f1": 0.03,
+    "bootstrap_resamples": 2000,
+    "min_age_days_to_adopt": 30,
+    "budget_minutes": 300
+  },
+  "discovery": {
+    "enabled": true,
+    "max_size_gb": 9.0,
+    "min_size_gb": 1.0,
+    "max_new_per_run": 4,
+    "families": [
+      "qwen3",
+      "qwen3.5",
+      "gemma3",
+      "gemma4",
+      "granite4",
+      "granite4.2",
+      "ministral-3",
+      "phi4-mini",
+      "llama3.2",
+      "llama3.1",
+      "smollm3",
+      "olmo3"
+    ],
+    "exclude_words": [
+      "embed",
+      "code",
+      "coder",
+      "vision",
+      "vl",
+      "ocr",
+      "guard",
+      "math",
+      "audio",
+      "cloud",
+      "uncensored",
+      "abliterated"
+    ]
+  },
+  "entries": [
+    {"label": "qwen3:8b", "backend": "ollama", "model": "qwen3:8b", "options": {"think": false}},
+    {"label": "qwen3:4b", "backend": "ollama", "model": "qwen3:4b", "options": {"think": false}},
+    {"label": "gemma3:4b", "backend": "ollama", "model": "gemma3:4b"},
+    {"label": "gemma3:12b", "backend": "ollama", "model": "gemma3:12b"},
+    {"label": "granite4:3b", "backend": "ollama", "model": "granite4:3b"},
+    {"label": "llama3.1:8b", "backend": "ollama", "model": "llama3.1:8b"},
+    {"label": "ministral-3:8b", "backend": "ollama", "model": "ministral-3:8b"},
+    {"label": "phi4-mini:3.8b", "backend": "ollama", "model": "phi4-mini:3.8b"}
+  ]
+}

@@ -1,0 +1,268 @@
+name: Model benchmark
+
+# Monthly (day 24, away from the Layer 3 benchmark on day 20 and the Layer 1 runs on Mondays):
+# discover new models, then two stages:
+#   triage   every candidate on a fixed stratified sample of the gold set;
+#   confirm  the best finalists and the production model on the whole gold set, in shards;
+# then score and publish results/recommendation.json, which Layer 1 instances read (LLM_MODEL=auto).
+# Results are cached by model build, production code, gold set and stage: only what changed runs.
+#
+# Security: the jobs that run downloaded models have a read-only token and hand over only their
+# own result file; "select" and "score" accept from each of them only the file named after that
+# job (bench/accept_runs.py); only "score" writes, and it runs no model.
+on:
+  schedule:
+    - cron: '0 4 24 * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Run every candidate again'
+        type: boolean
+        default: false
+      only:
+        description: 'Comma-separated labels to (re)run; empty = what changed'
+        required: false
+        default: ''
+      discover:
+        description: 'Look for new models in the Ollama library'
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: benchmark
+  cancel-in-progress: false
+
+env:
+  UPSTREAM_REPO: lsp3cesarschool/5ltep-layer1
+  PYTHON_VERSION: '3.11'
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+      count: ${{ steps.plan.outputs.count }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+          persist-credentials: false
+      - uses: actions/checkout@v5
+        with:
+          repository: ${{ env.UPSTREAM_REPO }}
+          path: upstream
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+      - run: pip install -r requirements.txt -r upstream/requirements.txt
+      - name: Discover new models
+        if: ${{ inputs.discover != false }}
+        run: python bench/discover.py || echo "::warning::discovery failed; curated candidates only"
+      - name: Plan the triage
+        id: plan
+        env:
+          FORCE: ${{ inputs.force && 'true' || 'false' }}
+          ONLY: ${{ inputs.only }}
+        run: |
+          args=(--stage triage --only "$ONLY")
+          [ "$FORCE" = "true" ] && args+=(--force)
+          python bench/plan.py "${args[@]}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: plan
+          path: |
+            results/plan.json
+            results/discovered.json
+            results/first_seen.json
+
+  triage:
+    needs: plan
+    if: ${{ needs.plan.outputs.count > 0 }}
+    runs-on: ubuntu-latest   # public repository: 4 vCPU / 16 GB, no minute quota
+    timeout-minutes: 340
+    permissions:
+      contents: read          # runs a downloaded model: no write access to anything
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        job: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    name: triage ${{ matrix.job.label }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+          persist-credentials: false
+      - uses: actions/checkout@v5
+        with:
+          repository: ${{ env.UPSTREAM_REPO }}
+          path: upstream
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+      - run: pip install -r requirements.txt -r upstream/requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: plan
+          path: results/
+      - uses: ./.github/actions/setup-ollama
+        with:
+          model: ${{ matrix.job.model }}
+          digest: ${{ matrix.job.digest }}
+      - name: Run the triage sample
+        env:
+          JOB: ${{ toJSON(matrix.job) }}
+        run: python bench/run.py --entry "$JOB"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: run-triage-${{ matrix.job.slug }}-0
+          path: results/runs/${{ matrix.job.slug }}__${{ matrix.job.key }}__s0of1.json
+          if-no-files-found: ignore
+
+  select:
+    needs: [plan, triage]
+    if: ${{ always() && needs.plan.result == 'success' }}
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+      count: ${{ steps.plan.outputs.count }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+          persist-credentials: false
+      - uses: actions/checkout@v5
+        with:
+          repository: ${{ env.UPSTREAM_REPO }}
+          path: upstream
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+      - run: pip install -r requirements.txt -r upstream/requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: plan
+          path: results/
+      - uses: actions/download-artifact@v4
+        continue-on-error: true      # no triage job this month: nothing to download
+        with:
+          pattern: run-triage-*
+          path: ${{ runner.temp }}/runs
+      - name: Accept each triage job's own result only
+        run: python bench/accept_runs.py "$RUNNER_TEMP/runs" --stage triage
+      - name: Pick the finalists and plan the confirmation
+        id: plan
+        run: python bench/plan.py --stage confirm
+      - uses: actions/upload-artifact@v4
+        with:
+          name: select
+          path: |
+            results/plan.json
+            results/runs/
+
+  confirm:
+    needs: [plan, select]
+    if: ${{ always() && needs.select.result == 'success' && needs.select.outputs.count > 0 }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    permissions:
+      contents: read
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        job: ${{ fromJSON(needs.select.outputs.matrix) }}
+    name: confirm ${{ matrix.job.label }} (${{ matrix.job.shard }}/${{ matrix.job.shards }})
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+          persist-credentials: false
+      - uses: actions/checkout@v5
+        with:
+          repository: ${{ env.UPSTREAM_REPO }}
+          path: upstream
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+      - run: pip install -r requirements.txt -r upstream/requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: select
+          path: results/
+      - uses: ./.github/actions/setup-ollama
+        with:
+          model: ${{ matrix.job.model }}
+          digest: ${{ matrix.job.digest }}
+      - name: Run this shard of the gold set
+        env:
+          JOB: ${{ toJSON(matrix.job) }}
+        run: python bench/run.py --entry "$JOB"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: run-confirm-${{ matrix.job.slug }}-${{ matrix.job.shard }}
+          path: results/runs/${{ matrix.job.slug }}__${{ matrix.job.key }}__s${{ matrix.job.shard }}of${{ matrix.job.shards }}.json
+          if-no-files-found: ignore
+
+  score:
+    needs: [plan, select, confirm]
+    if: ${{ always() && needs.plan.result == 'success' && needs.select.result == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write          # the only job that writes; it runs no model
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/checkout@v5
+        with:
+          repository: ${{ env.UPSTREAM_REPO }}
+          path: upstream
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+      - run: pip install -r requirements.txt -r upstream/requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: select
+          path: results/
+      - uses: actions/download-artifact@v4
+        with:
+          name: plan
+          path: ${{ runner.temp }}/plan
+      - name: Keep the discovery files of this run
+        run: cp "$RUNNER_TEMP/plan/discovered.json" "$RUNNER_TEMP/plan/first_seen.json" results/ 2>/dev/null || true
+      - uses: actions/download-artifact@v4
+        continue-on-error: true      # no confirmation job this month: nothing to download
+        with:
+          pattern: run-confirm-*
+          path: ${{ runner.temp }}/runs
+      - name: Accept each confirmation job's own result only
+        run: python bench/accept_runs.py "$RUNNER_TEMP/runs" --stage confirm
+      - name: Score
+        run: python bench/score.py
+      - name: Commit
+        run: |
+          git config user.name "5L-TEP L1 Model Benchmark Bot"
+          git config user.email "5ltep-l1-modeltest-bot@users.noreply.github.com"
+          git add results/ README.md LEIAME.md candidates.json
+          git diff --cached --quiet || git commit -m "chore(bench): results [$(date -u +%Y-%m-%dT%H:%M:%SZ)]"
+          git pull --rebase --autostash
+          git push
