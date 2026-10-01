@@ -24,24 +24,22 @@ import json
 import sys
 from pathlib import Path
 
-import requests
-
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from bench import http  # noqa: E402
 from bench.common import GOLD_DIR, GOLD_FILE  # noqa: E402
 from gold.layouts import LAYOUTS, render  # noqa: E402
 
 INSTANCES = ["lsp3cesarschool/5ltep-layer1", "lsp3cesarschool/5ltep-layer1-aneel", "lsp3cesarschool/5ltep-layer1-recife"]
-UA = {"User-Agent": "5ltep-layer1-modeltest (+https://github.com/lsp3cesarschool/5ltep-layer1-modeltest)"}
 MIN_FIELDS, MAX_FIELDS = 3, 40
 
 
 def head_commit(repo: str) -> str | None:
-    r = requests.get(f"https://api.github.com/repos/{repo}/commits/main", headers=UA, timeout=30)
+    r = http.get(f"https://api.github.com/repos/{repo}/commits/main", read_timeout=30)
     return r.json().get("sha") if r.status_code == 200 else None
 
 
 def raw(repo: str, sha: str, path: str):
-    r = requests.get(f"https://raw.githubusercontent.com/{repo}/{sha}/{path}", headers=UA, timeout=60)
+    r = http.get(f"https://raw.githubusercontent.com/{repo}/{sha}/{path}", read_timeout=60)
     return r.json() if r.status_code == 200 else None
 
 
@@ -110,7 +108,7 @@ def main(argv=None) -> None:
     cases, sources = [], []
 
     for i, c in enumerate(round_robin([real_candidates(r, s) for r, s in commits.items()], args.real), 1):
-        resp = requests.get(c["dictionary"]["url"], headers=UA, timeout=120)
+        resp = http.get(c["dictionary"]["url"], read_timeout=120)
         if resp.status_code != 200 or hashlib.sha256(resp.content).hexdigest() != c["sha256"]:
             print(f"skipped {c['dataset']}: the PDF changed since the instance extracted it")
             continue
