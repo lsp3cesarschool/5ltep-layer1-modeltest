@@ -1,0 +1,2429 @@
+{
+ "instances": {
+  "lsp3cesarschool/5ltep-layer1": "48f8c4700303a67360c8be261d43d415c194d610",
+  "lsp3cesarschool/5ltep-layer1-aneel": "f2761cb541bc28c1751e7d8f32db037694e5f275",
+  "lsp3cesarschool/5ltep-layer1-recife": "4c909d3add58c97e7cd39887187cb49b1ed2d5d9"
+ },
+ "cases": [
+  {
+   "id": "real-01",
+   "kind": "real",
+   "layout": "portal",
+   "pdf": "pdfs/real-01.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1-aneel",
+    "commit": "f2761cb541bc28c1751e7d8f32db037694e5f275",
+    "dataset": "indicadores-de-conformidade-do-nivel-de-tensao-em-regime-permanente",
+    "dictionary_url": "https://dadosabertos.aneel.gov.br/dataset/51f2d7ea-3171-4d22-9115-3384113d01df/resource/01408b65-700a-43c6-a84b-ddf08fb314cf/download/dm-indicadores-de-compensacao-de-nivel-de-tensao.pdf",
+    "sha256": "b930f30ac4b028269a02ef720f375598a7a69989dd096c1ecb4a3fd431e146f4"
+   },
+   "fields": [
+    {
+     "name": "DatGeracaoConjuntoDados",
+     "type": "date"
+    },
+    {
+     "name": "SigAgente",
+     "type": "string"
+    },
+    {
+     "name": "NumCNPJ",
+     "type": "string"
+    },
+    {
+     "name": "IdeConjUndConsumidoras",
+     "type": "string"
+    },
+    {
+     "name": "DscConjUndConsumidoras",
+     "type": "string"
+    },
+    {
+     "name": "SigIndicador",
+     "type": "string"
+    },
+    {
+     "name": "AnoIndice",
+     "type": "string"
+    },
+    {
+     "name": "NumPeriodoIndice",
+     "type": "number"
+    },
+    {
+     "name": "VlrIndiceEnviado",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "id": "real-02",
+   "kind": "real",
+   "layout": "portal",
+   "pdf": "pdfs/real-02.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1-recife",
+    "commit": "4c909d3add58c97e7cd39887187cb49b1ed2d5d9",
+    "dataset": "agremiacoes-carnavalescas",
+    "dictionary_url": "https://dados.recife.pe.gov.br:443/dataset/9557d115-3793-42a0-97a2-0e783c190549/resource/0e6fbfc6-d8b8-4fd3-9d02-9a1ead67a052/download/dicionario-de-dados-de-agremiacoes-carnavalescas.pdf",
+    "sha256": "9ef881cf620b04c64904b71fbb41a859644fbbefc68ca3f4c304c9ac21483c96"
+   },
+   "fields": [
+    {
+     "name": "codigo",
+     "type": "number"
+    },
+    {
+     "name": "modalidade",
+     "type": "string"
+    },
+    {
+     "name": "nome",
+     "type": "string"
+    },
+    {
+     "name": "tipo_sede",
+     "type": "string"
+    },
+    {
+     "name": "data_fundacao",
+     "type": "date"
+    },
+    {
+     "name": "cnpj",
+     "type": "number"
+    },
+    {
+     "name": "bairro",
+     "type": "string"
+    },
+    {
+     "name": "cidade",
+     "type": "string"
+    },
+    {
+     "name": "rpa",
+     "type": "string"
+    },
+    {
+     "name": "uf",
+     "type": "string"
+    },
+    {
+     "name": "filiacao",
+     "type": "string"
+    }
+   ]
+  },
+  {
+   "id": "real-03",
+   "kind": "real",
+   "layout": "portal",
+   "pdf": "pdfs/real-03.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1-aneel",
+    "commit": "f2761cb541bc28c1751e7d8f32db037694e5f275",
+    "dataset": "subsidios-tarifarios",
+    "dictionary_url": "https://dadosabertos.aneel.gov.br/dataset/28a6b7de-6f3a-4a5b-aa69-229f3bc4fbc9/resource/107dc0bb-ae8a-4220-97a9-a5f1a4bb68cf/download/dm-subsidios-tarifarios.pdf",
+    "sha256": "892c1271d5715e7cea05e8e02d2953069d306616372ff6ca3af006abd89bde76"
+   },
+   "fields": [
+    {
+     "name": "DatGeracaoConjuntoDados",
+     "type": "date"
+    },
+    {
+     "name": "DatSubsidio",
+     "type": "date"
+    },
+    {
+     "name": "NumCNPJDistribuidora",
+     "type": "string"
+    },
+    {
+     "name": "SigAgente",
+     "type": "string"
+    },
+    {
+     "name": "NomAgente",
+     "type": "string"
+    },
+    {
+     "name": "DscTipoMontante",
+     "type": "string"
+    },
+    {
+     "name": "DscTipoSubsidio",
+     "type": "string"
+    },
+    {
+     "name": "VlrSubsidio",
+     "type": "number"
+    },
+    {
+     "name": "DscAtoNormativo",
+     "type": "string"
+    },
+    {
+     "name": "NumAto",
+     "type": "string"
+    },
+    {
+     "name": "DatAssinaturaAto",
+     "type": "date"
+    },
+    {
+     "name": "DatInicioVigenciaAto",
+     "type": "date"
+    },
+    {
+     "name": "DatFimVigenciaAto",
+     "type": "date"
+    },
+    {
+     "name": "DthPublicacaoAto",
+     "type": "datetime"
+    }
+   ]
+  },
+  {
+   "id": "real-04",
+   "kind": "real",
+   "layout": "portal",
+   "pdf": "pdfs/real-04.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1-recife",
+    "commit": "4c909d3add58c97e7cd39887187cb49b1ed2d5d9",
+    "dataset": "despesas-orcamentarias",
+    "dictionary_url": "https://dados.recife.pe.gov.br:443/dataset/63f7941b-9a1e-4a49-893b-d5f16e2134d8/resource/2ed15d79-feeb-4a69-b84d-fb6b34a37ad9/download/dicionario-de-dados-de-despesas-orcamentarias.pdf",
+    "sha256": "d92e7f071a4016fec4d04fca61609f929f51fa5b248603fe12729b2226442fd9"
+   },
+   "fields": [
+    {
+     "name": "ano_movimentacao",
+     "type": "number"
+    },
+    {
+     "name": "mes_movimentacao",
+     "type": "date"
+    },
+    {
+     "name": "orgao_codigo",
+     "type": "number"
+    },
+    {
+     "name": "orgao_nome",
+     "type": "string"
+    },
+    {
+     "name": "unidade_codigo",
+     "type": "string"
+    },
+    {
+     "name": "unidade_nome",
+     "type": "string"
+    },
+    {
+     "name": "categoria_economica_codigo",
+     "type": "number"
+    },
+    {
+     "name": "categoria_economica_nome",
+     "type": "string"
+    },
+    {
+     "name": "grupo_despesa_codigo",
+     "type": "number"
+    },
+    {
+     "name": "grupo_despesa_nome",
+     "type": "string"
+    },
+    {
+     "name": "modalidade_aplicacao_codigo",
+     "type": "number"
+    },
+    {
+     "name": "modalidade_aplicacao_nome",
+     "type": "string"
+    },
+    {
+     "name": "elemento_codigo",
+     "type": "number"
+    },
+    {
+     "name": "elemento_nome",
+     "type": "string"
+    },
+    {
+     "name": "subelemento_codigo",
+     "type": "number"
+    },
+    {
+     "name": "subelemento_nome",
+     "type": "string"
+    },
+    {
+     "name": "funcao_codigo",
+     "type": "number"
+    },
+    {
+     "name": "funcao_nome",
+     "type": "string"
+    },
+    {
+     "name": "subfuncao_codigo",
+     "type": "number"
+    },
+    {
+     "name": "subfuncao_nome",
+     "type": "string"
+    },
+    {
+     "name": "programa_codigo",
+     "type": "number"
+    },
+    {
+     "name": "programa_nome",
+     "type": "string"
+    },
+    {
+     "name": "acao_codigo",
+     "type": "number"
+    },
+    {
+     "name": "acao_nome",
+     "type": "string"
+    },
+    {
+     "name": "fonte_recurso_codigo",
+     "type": "number"
+    },
+    {
+     "name": "fonte_recurso_nome",
+     "type": "string"
+    },
+    {
+     "name": "empenho_ano",
+     "type": "number"
+    },
+    {
+     "name": "empenho_modalidade_nome",
+     "type": "number"
+    },
+    {
+     "name": "empenho_modalidade_codigo",
+     "type": "string"
+    },
+    {
+     "name": "empenho_numero",
+     "type": "number"
+    },
+    {
+     "name": "subempenho",
+     "type": "number"
+    },
+    {
+     "name": "indicador_subempenho",
+     "type": "string"
+    },
+    {
+     "name": "credor_codigo",
+     "type": "number"
+    },
+    {
+     "name": "credor_nome",
+     "type": "string"
+    },
+    {
+     "name": "modalidade_licitacao_codigo",
+     "type": "number"
+    },
+    {
+     "name": "modalidade_licitacao_nome",
+     "type": "string"
+    },
+    {
+     "name": "valor_empenhado",
+     "type": "number"
+    },
+    {
+     "name": "valor_liquidado",
+     "type": "number"
+    },
+    {
+     "name": "valor_pago",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "id": "real-05",
+   "kind": "real",
+   "layout": "portal",
+   "pdf": "pdfs/real-05.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1-aneel",
+    "commit": "f2761cb541bc28c1751e7d8f32db037694e5f275",
+    "dataset": "cfurh",
+    "dictionary_url": "https://dadosabertos.aneel.gov.br/dataset/855a73ed-f4e0-4e88-8467-c330ba0223d3/resource/10e5c72f-976d-4648-a111-3412b981be08/download/dm-cfurh-geracao.pdf",
+    "sha256": "392f2ab42a267e52276dfd1b0818af2cda45c719e2056f701b7a58516e2a6aba"
+   },
+   "fields": [
+    {
+     "name": "DatGeracaoConjuntoDados",
+     "type": "date"
+    },
+    {
+     "name": "DatCompetencia",
+     "type": "date"
+    },
+    {
+     "name": "AnoCompetencia",
+     "type": "string"
+    },
+    {
+     "name": "DscMesAnoCompetencia",
+     "type": "string"
+    },
+    {
+     "name": "NomAgente",
+     "type": "string"
+    },
+    {
+     "name": "SigAgente",
+     "type": "string"
+    },
+    {
+     "name": "NumCPFCNPJ",
+     "type": "string"
+    },
+    {
+     "name": "CodCEG",
+     "type": "string"
+    },
+    {
+     "name": "NomEmpreendimento",
+     "type": "string"
+    },
+    {
+     "name": "IdcUsinaProrrogada",
+     "type": "string"
+    },
+    {
+     "name": "PctEmpresa",
+     "type": "number"
+    },
+    {
+     "name": "VlrGeracaoTotal",
+     "type": "number"
+    },
+    {
+     "name": "VlrGeracaoDistribuida",
+     "type": "number"
+    },
+    {
+     "name": "VlrPrincipal",
+     "type": "number"
+    },
+    {
+     "name": "VlrMultaJuros",
+     "type": "number"
+    },
+    {
+     "name": "VlrTotal",
+     "type": "number"
+    },
+    {
+     "name": "VlrPrincipalDistribuido",
+     "type": "number"
+    },
+    {
+     "name": "VlrMultaJurosDistribuido",
+     "type": "number"
+    },
+    {
+     "name": "VlrTotalDistribuido",
+     "type": "number"
+    },
+    {
+     "name": "VlrTarifa",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "id": "real-06",
+   "kind": "real",
+   "layout": "portal",
+   "pdf": "pdfs/real-06.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1-recife",
+    "commit": "4c909d3add58c97e7cd39887187cb49b1ed2d5d9",
+    "dataset": "receitas",
+    "dictionary_url": "https://dados.recife.pe.gov.br:443/dataset/d620f79b-ab87-42ff-825c-0ce2a25694fe/resource/344aad0c-a53f-45ab-bd32-4d2c946fdfe9/download/dicionario-de-dados-de-receitas.pdf",
+    "sha256": "ab443f4afbb70e466fe6b3b3bf2560542fc2e07eca2e79c64a3b74e67a7ceece"
+   },
+   "fields": [
+    {
+     "name": "ano",
+     "type": "number"
+    },
+    {
+     "name": "mes",
+     "type": "number"
+    },
+    {
+     "name": "mes_nome",
+     "type": "string"
+    },
+    {
+     "name": "orgao_codigo",
+     "type": "number"
+    },
+    {
+     "name": "orgao_nome",
+     "type": "string"
+    },
+    {
+     "name": "unidade_codigo",
+     "type": "string"
+    },
+    {
+     "name": "unidade_nome",
+     "type": "string"
+    },
+    {
+     "name": "fonte_recurso_codigo",
+     "type": "number"
+    },
+    {
+     "name": "fonte_recurso_nome",
+     "type": "string"
+    },
+    {
+     "name": "categoria_receita_codigo",
+     "type": "number"
+    },
+    {
+     "name": "categoria_receita_nome",
+     "type": "string"
+    },
+    {
+     "name": "fonte_origem_receita_codigo",
+     "type": "number"
+    },
+    {
+     "name": "fonte_origem_receita_nome",
+     "type": "string"
+    },
+    {
+     "name": "subfonte_receita_codigo",
+     "type": "number"
+    },
+    {
+     "name": "subfonte_receita_nome",
+     "type": "string"
+    },
+    {
+     "name": "rubrica_receita_codigo",
+     "type": "number"
+    },
+    {
+     "name": "rubrica_receita_nome",
+     "type": "string"
+    },
+    {
+     "name": "alinea_receita_codigo",
+     "type": "number"
+    },
+    {
+     "name": "alinea_receita_nome",
+     "type": "string"
+    },
+    {
+     "name": "subalinea_receita_codigo",
+     "type": "number"
+    },
+    {
+     "name": "subalinea_receita_nome",
+     "type": "string"
+    },
+    {
+     "name": "receita_local_codigo",
+     "type": "number"
+    },
+    {
+     "name": "receita_local_nome",
+     "type": "string"
+    },
+    {
+     "name": "receita_prevista",
+     "type": "number"
+    },
+    {
+     "name": "receita_prevista_acrescimo",
+     "type": "number"
+    },
+    {
+     "name": "receita_prevista_atualizada",
+     "type": "number"
+    },
+    {
+     "name": "receita_arrecadada",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "id": "real-07",
+   "kind": "real",
+   "layout": "portal",
+   "pdf": "pdfs/real-07.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1-aneel",
+    "commit": "f2761cb541bc28c1751e7d8f32db037694e5f275",
+    "dataset": "cfurh",
+    "dictionary_url": "https://dadosabertos.aneel.gov.br/dataset/855a73ed-f4e0-4e88-8467-c330ba0223d3/resource/15bd55d8-7b6d-4bcd-866c-b31c704fd53b/download/dm-cfurh-area-alagada.pdf",
+    "sha256": "bee9864778a7bec5788589861677f17406fc98f6dbe791957f4e3a5be5fd48f0"
+   },
+   "fields": [
+    {
+     "name": "DatGeracaoConjuntoDados",
+     "type": "date"
+    },
+    {
+     "name": "SigUF",
+     "type": "string"
+    },
+    {
+     "name": "CodMunicipioIBGE",
+     "type": "number"
+    },
+    {
+     "name": "NomMunicipio",
+     "type": "string"
+    },
+    {
+     "name": "NomAgente",
+     "type": "string"
+    },
+    {
+     "name": "NumCPFCNPJ",
+     "type": "string"
+    },
+    {
+     "name": "CodCEG",
+     "type": "string"
+    },
+    {
+     "name": "NomEmpreendimento",
+     "type": "string"
+    },
+    {
+     "name": "IdcUsinaPrincipal",
+     "type": "string"
+    },
+    {
+     "name": "NomReservatorio",
+     "type": "string"
+    },
+    {
+     "name": "MdaAreaAlagadaKm",
+     "type": "number"
+    },
+    {
+     "name": "PctAreaAlagadaRsrvtr",
+     "type": "number"
+    },
+    {
+     "name": "PctCasaMaquinas",
+     "type": "number"
+    },
+    {
+     "name": "PctEstacaoElevatoria",
+     "type": "number"
+    },
+    {
+     "name": "PctParticipacao",
+     "type": "number"
+    },
+    {
+     "name": "IdcCasaMaqDissociada",
+     "type": "string"
+    },
+    {
+     "name": "IdcEstacaoElevatoria",
+     "type": "string"
+    }
+   ]
+  },
+  {
+   "id": "real-08",
+   "kind": "real",
+   "layout": "portal",
+   "pdf": "pdfs/real-08.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1-recife",
+    "commit": "4c909d3add58c97e7cd39887187cb49b1ed2d5d9",
+    "dataset": "arvores-tombadas",
+    "dictionary_url": "https://dados.recife.pe.gov.br:443/dataset/42bbfbf1-57ad-4121-9087-ac52d0511a3a/resource/3b2c95b6-93dc-42ff-858f-206c6b511ce4/download/dicionario-de-dados-de-arvores-tombadas.pdf.pdf",
+    "sha256": "35976492ede36a486dc3938ef638fa5141eb789c1dbc0c03201f946aa126eddc"
+   },
+   "fields": [
+    {
+     "name": "nome_popular",
+     "type": "string"
+    },
+    {
+     "name": "numero",
+     "type": "number"
+    },
+    {
+     "name": "familia",
+     "type": "string"
+    },
+    {
+     "name": "nome_cientifico",
+     "type": "string"
+    },
+    {
+     "name": "este",
+     "type": "number"
+    },
+    {
+     "name": "endereco",
+     "type": "string"
+    },
+    {
+     "name": "norte",
+     "type": "number"
+    },
+    {
+     "name": "decreto",
+     "type": "string"
+    },
+    {
+     "name": "microregiao",
+     "type": "string"
+    },
+    {
+     "name": "rpa",
+     "type": "number"
+    },
+    {
+     "name": "identifica",
+     "type": "number"
+    },
+    {
+     "name": "observacao",
+     "type": "string"
+    },
+    {
+     "name": "latitude",
+     "type": "number"
+    },
+    {
+     "name": "longitude",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "id": "real-09",
+   "kind": "real",
+   "layout": "portal",
+   "pdf": "pdfs/real-09.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1-aneel",
+    "commit": "f2761cb541bc28c1751e7d8f32db037694e5f275",
+    "dataset": "siga-sistema-de-informacoes-de-geracao-da-aneel",
+    "dictionary_url": "https://dadosabertos.aneel.gov.br/dataset/6d90b77c-c5f5-4d81-bdec-7bc619494bb9/resource/25722a60-194d-4234-ab3b-b71354078402/download/dm-siga-sistema-de-informacoes-de-geracao-da-aneel.pdf",
+    "sha256": "765488e53aef975f35bc1e35d84a6bbe58be1beeab7012cc7e9b72425b3ce92c"
+   },
+   "fields": [
+    {
+     "name": "DatGeracaoConjuntoDados",
+     "type": "date"
+    },
+    {
+     "name": "NomEmpreendimento",
+     "type": "string"
+    },
+    {
+     "name": "IdeNucleoCEG",
+     "type": "string"
+    },
+    {
+     "name": "CodCEG",
+     "type": "string"
+    },
+    {
+     "name": "SigUFPrincipal",
+     "type": "string"
+    },
+    {
+     "name": "SigTipoGeracao",
+     "type": "string"
+    },
+    {
+     "name": "DscFaseUsina",
+     "type": "string"
+    },
+    {
+     "name": "DscOrigemCombustivel",
+     "type": "string"
+    },
+    {
+     "name": "DscFonteCombustivel",
+     "type": "string"
+    },
+    {
+     "name": "DscTipoOutorga",
+     "type": "string"
+    },
+    {
+     "name": "NomFonteCombustivel",
+     "type": "string"
+    },
+    {
+     "name": "DatEntradaOperacao",
+     "type": "date"
+    },
+    {
+     "name": "MdaPotenciaOutorgadaKw",
+     "type": "number"
+    },
+    {
+     "name": "MdaPotenciaFiscalizadaKw",
+     "type": "number"
+    },
+    {
+     "name": "MdaGarantiaFisicaKw",
+     "type": "number"
+    },
+    {
+     "name": "IdcGeracaoQualificada",
+     "type": "string"
+    },
+    {
+     "name": "NumCoordNEmpreendimento",
+     "type": "number"
+    },
+    {
+     "name": "NumCoordEEmpreendimento",
+     "type": "number"
+    },
+    {
+     "name": "DatInicioVigencia",
+     "type": "date"
+    },
+    {
+     "name": "DatFimVigencia",
+     "type": "date"
+    },
+    {
+     "name": "DscPropriRegimePariticipacao",
+     "type": "string"
+    },
+    {
+     "name": "DscSubBacia",
+     "type": "string"
+    },
+    {
+     "name": "DscMuninicpios",
+     "type": "string"
+    }
+   ]
+  },
+  {
+   "id": "real-10",
+   "kind": "real",
+   "layout": "portal",
+   "pdf": "pdfs/real-10.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1-recife",
+    "commit": "4c909d3add58c97e7cd39887187cb49b1ed2d5d9",
+    "dataset": "roteiro-de-coleta",
+    "dictionary_url": "https://dados.recife.pe.gov.br:443/dataset/d29159e2-cb76-4cfc-bea4-d71e9c221c1f/resource/3fff9deb-c0e1-4465-80b5-4547eff20116/download/dicionario-de-dados-dos-roteiros-de-coleta-de-residuos.pdf",
+    "sha256": "56959bd29d8314dbab90bbc68d4cd2fc1aaf0cabffe28204c2538fdffde864ba"
+   },
+   "fields": [
+    {
+     "name": "intervalo",
+     "type": "string"
+    },
+    {
+     "name": "setor",
+     "type": "string"
+    },
+    {
+     "name": "endereco",
+     "type": "string"
+    },
+    {
+     "name": "turno",
+     "type": "string"
+    },
+    {
+     "name": "rota_setor",
+     "type": "number"
+    },
+    {
+     "name": "frequencia",
+     "type": "string"
+    }
+   ]
+  },
+  {
+   "id": "real-11",
+   "kind": "real",
+   "layout": "portal",
+   "pdf": "pdfs/real-11.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1-aneel",
+    "commit": "f2761cb541bc28c1751e7d8f32db037694e5f275",
+    "dataset": "acrescimo-da-potencia-instalada",
+    "dictionary_url": "https://dadosabertos.aneel.gov.br/dataset/4bf07812-e421-48f3-8e48-eec0040764ba/resource/3851401b-8c55-43b1-a25c-d4257f9e1553/download/dm-acrescimo-da-potencia-instalada.pdf",
+    "sha256": "02eebcd4e117f38caf944ea296a1e7aed129094d686d4f1023214b3490deaf00"
+   },
+   "fields": [
+    {
+     "name": "DatGeracaoConjuntoDados",
+     "type": "date"
+    },
+    {
+     "name": "MesReferencia",
+     "type": "string"
+    },
+    {
+     "name": "AnoReferencia",
+     "type": "string"
+    },
+    {
+     "name": "MdaPotenciaMW",
+     "type": "number"
+    },
+    {
+     "name": "MdaAcrescimoPotenciaMW",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "id": "real-12",
+   "kind": "real",
+   "layout": "portal",
+   "pdf": "pdfs/real-12.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1-recife",
+    "commit": "4c909d3add58c97e7cd39887187cb49b1ed2d5d9",
+    "dataset": "gabpe-processos-de-aquisicoes-de-bens-e-servicos-oriundos-de-dispensas-ou-inexigibilidades-covid-19",
+    "dictionary_url": "https://dados.recife.pe.gov.br:443/dataset/e98a1225-a33f-486e-b3cc-196c7457f1d9/resource/44072699-94a7-4280-9462-b80ddd052b30/download/dicionario-de-dados-processos-de-aquisicoes-de-bens-e-servicos-covid19.pdf",
+    "sha256": "7afde6efab2828a625e41d551a4486c79ff04a445f3a49323e3c1dc458d2c25d"
+   },
+   "fields": [
+    {
+     "name": "num_dispensa",
+     "type": "string"
+    },
+    {
+     "name": "situacao_dispensa",
+     "type": "string"
+    },
+    {
+     "name": "unidade",
+     "type": "string"
+    },
+    {
+     "name": "objeto",
+     "type": "string"
+    },
+    {
+     "name": "local_de_execucao",
+     "type": "string"
+    },
+    {
+     "name": "data_de_empenho_contrato",
+     "type": "date"
+    },
+    {
+     "name": "data_vigencia",
+     "type": "date"
+    },
+    {
+     "name": "cnpj_cpf",
+     "type": "string"
+    },
+    {
+     "name": "nome_fornecedor",
+     "type": "string"
+    },
+    {
+     "name": "valor_fornecedor",
+     "type": "number"
+    },
+    {
+     "name": "Arquivo_dispensa",
+     "type": "string"
+    },
+    {
+     "name": "arquivo_situacao",
+     "type": "string"
+    }
+   ]
+  },
+  {
+   "id": "syn-01-prose",
+   "kind": "synthetic",
+   "layout": "prose",
+   "pdf": "pdfs/syn-01-prose.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1",
+    "commit": "48f8c4700303a67360c8be261d43d415c194d610",
+    "dataset": "fiscalizacao-termo-de-demolicao",
+    "dictionary_url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/49e2db1d-3b84-4556-9c87-e5b0dbd9e6a6/resource/7804331e-c35f-4d74-b8c9-0bb4c3af2063/download/metadados-termo-de-demolicao-enquadramento.csv"
+   },
+   "fields": [
+    {
+     "name": "SEQ_TAD",
+     "type": "integer"
+    },
+    {
+     "name": "NUM_TAD",
+     "type": "string"
+    },
+    {
+     "name": "SER_TAD",
+     "type": "integer"
+    },
+    {
+     "name": "COD_SUBSTITUICAO",
+     "type": "integer"
+    },
+    {
+     "name": "ADMINISTRATIVO",
+     "type": "string"
+    },
+    {
+     "name": "NORMA_TIPO",
+     "type": "string"
+    },
+    {
+     "name": "NORMA_NUMERO",
+     "type": "integer"
+    },
+    {
+     "name": "ARTIGO",
+     "type": "integer"
+    },
+    {
+     "name": "NU_PARAGRAFO",
+     "type": "integer"
+    },
+    {
+     "name": "NU_INCISO",
+     "type": "integer"
+    },
+    {
+     "name": "CD_ALINEA",
+     "type": "string"
+    },
+    {
+     "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+     "type": "datetime"
+    }
+   ]
+  },
+  {
+   "id": "syn-01-list",
+   "kind": "synthetic",
+   "layout": "list",
+   "pdf": "pdfs/syn-01-list.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1",
+    "commit": "48f8c4700303a67360c8be261d43d415c194d610",
+    "dataset": "fiscalizacao-termo-de-demolicao",
+    "dictionary_url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/49e2db1d-3b84-4556-9c87-e5b0dbd9e6a6/resource/7804331e-c35f-4d74-b8c9-0bb4c3af2063/download/metadados-termo-de-demolicao-enquadramento.csv"
+   },
+   "fields": [
+    {
+     "name": "SEQ_TAD",
+     "type": "integer"
+    },
+    {
+     "name": "NUM_TAD",
+     "type": "string"
+    },
+    {
+     "name": "SER_TAD",
+     "type": "integer"
+    },
+    {
+     "name": "COD_SUBSTITUICAO",
+     "type": "integer"
+    },
+    {
+     "name": "ADMINISTRATIVO",
+     "type": "string"
+    },
+    {
+     "name": "NORMA_TIPO",
+     "type": "string"
+    },
+    {
+     "name": "NORMA_NUMERO",
+     "type": "integer"
+    },
+    {
+     "name": "ARTIGO",
+     "type": "integer"
+    },
+    {
+     "name": "NU_PARAGRAFO",
+     "type": "integer"
+    },
+    {
+     "name": "NU_INCISO",
+     "type": "integer"
+    },
+    {
+     "name": "CD_ALINEA",
+     "type": "string"
+    },
+    {
+     "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+     "type": "datetime"
+    }
+   ]
+  },
+  {
+   "id": "syn-01-table-reordered",
+   "kind": "synthetic",
+   "layout": "table-reordered",
+   "pdf": "pdfs/syn-01-table-reordered.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1",
+    "commit": "48f8c4700303a67360c8be261d43d415c194d610",
+    "dataset": "fiscalizacao-termo-de-demolicao",
+    "dictionary_url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/49e2db1d-3b84-4556-9c87-e5b0dbd9e6a6/resource/7804331e-c35f-4d74-b8c9-0bb4c3af2063/download/metadados-termo-de-demolicao-enquadramento.csv"
+   },
+   "fields": [
+    {
+     "name": "SEQ_TAD",
+     "type": "integer"
+    },
+    {
+     "name": "NUM_TAD",
+     "type": "string"
+    },
+    {
+     "name": "SER_TAD",
+     "type": "integer"
+    },
+    {
+     "name": "COD_SUBSTITUICAO",
+     "type": "integer"
+    },
+    {
+     "name": "ADMINISTRATIVO",
+     "type": "string"
+    },
+    {
+     "name": "NORMA_TIPO",
+     "type": "string"
+    },
+    {
+     "name": "NORMA_NUMERO",
+     "type": "integer"
+    },
+    {
+     "name": "ARTIGO",
+     "type": "integer"
+    },
+    {
+     "name": "NU_PARAGRAFO",
+     "type": "integer"
+    },
+    {
+     "name": "NU_INCISO",
+     "type": "integer"
+    },
+    {
+     "name": "CD_ALINEA",
+     "type": "string"
+    },
+    {
+     "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+     "type": "datetime"
+    }
+   ]
+  },
+  {
+   "id": "syn-02-prose",
+   "kind": "synthetic",
+   "layout": "prose",
+   "pdf": "pdfs/syn-02-prose.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1-recife",
+    "commit": "4c909d3add58c97e7cd39887187cb49b1ed2d5d9",
+    "dataset": "academia-recife",
+    "dictionary_url": "https://dados.recife.pe.gov.br:443/dataset/0119c2c6-60c0-4b41-86ff-2fd419dc9c91/resource/8c73c077-1ea9-4950-b37d-1033b0fdab06/download/dicionario-de-dados-academia-recife.json"
+   },
+   "fields": [
+    {
+     "name": "polo",
+     "type": "string"
+    },
+    {
+     "name": "rpa",
+     "type": "number"
+    },
+    {
+     "name": "logradouro",
+     "type": "string"
+    },
+    {
+     "name": "bairro",
+     "type": "string"
+    },
+    {
+     "name": "observacao",
+     "type": "string"
+    },
+    {
+     "name": "datainauguracao",
+     "type": "date"
+    },
+    {
+     "name": "latitude",
+     "type": "number"
+    },
+    {
+     "name": "longitude",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "id": "syn-02-list",
+   "kind": "synthetic",
+   "layout": "list",
+   "pdf": "pdfs/syn-02-list.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1-recife",
+    "commit": "4c909d3add58c97e7cd39887187cb49b1ed2d5d9",
+    "dataset": "academia-recife",
+    "dictionary_url": "https://dados.recife.pe.gov.br:443/dataset/0119c2c6-60c0-4b41-86ff-2fd419dc9c91/resource/8c73c077-1ea9-4950-b37d-1033b0fdab06/download/dicionario-de-dados-academia-recife.json"
+   },
+   "fields": [
+    {
+     "name": "polo",
+     "type": "string"
+    },
+    {
+     "name": "rpa",
+     "type": "number"
+    },
+    {
+     "name": "logradouro",
+     "type": "string"
+    },
+    {
+     "name": "bairro",
+     "type": "string"
+    },
+    {
+     "name": "observacao",
+     "type": "string"
+    },
+    {
+     "name": "datainauguracao",
+     "type": "date"
+    },
+    {
+     "name": "latitude",
+     "type": "number"
+    },
+    {
+     "name": "longitude",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "id": "syn-02-table-reordered",
+   "kind": "synthetic",
+   "layout": "table-reordered",
+   "pdf": "pdfs/syn-02-table-reordered.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1-recife",
+    "commit": "4c909d3add58c97e7cd39887187cb49b1ed2d5d9",
+    "dataset": "academia-recife",
+    "dictionary_url": "https://dados.recife.pe.gov.br:443/dataset/0119c2c6-60c0-4b41-86ff-2fd419dc9c91/resource/8c73c077-1ea9-4950-b37d-1033b0fdab06/download/dicionario-de-dados-academia-recife.json"
+   },
+   "fields": [
+    {
+     "name": "polo",
+     "type": "string"
+    },
+    {
+     "name": "rpa",
+     "type": "number"
+    },
+    {
+     "name": "logradouro",
+     "type": "string"
+    },
+    {
+     "name": "bairro",
+     "type": "string"
+    },
+    {
+     "name": "observacao",
+     "type": "string"
+    },
+    {
+     "name": "datainauguracao",
+     "type": "date"
+    },
+    {
+     "name": "latitude",
+     "type": "number"
+    },
+    {
+     "name": "longitude",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "id": "syn-03-prose",
+   "kind": "synthetic",
+   "layout": "prose",
+   "pdf": "pdfs/syn-03-prose.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1",
+    "commit": "48f8c4700303a67360c8be261d43d415c194d610",
+    "dataset": "fiscalizacao-termo-de-destruicao-ou-inutilizacao",
+    "dictionary_url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/656f3fbb-febc-428a-9e01-2e2d4d54adab/resource/aa04d97f-0501-4d66-a3ef-6c36bdf9c0ef/download/metadados-termo-de-destruicao-ou-inutilizacao-bem-destruido.csv"
+   },
+   "fields": [
+    {
+     "name": "SEQ_TAD",
+     "type": "number"
+    },
+    {
+     "name": "NUM_TAD",
+     "type": "string"
+    },
+    {
+     "name": "SER_TAD",
+     "type": "string"
+    },
+    {
+     "name": "COD_SUBSTITUICAO",
+     "type": "string"
+    },
+    {
+     "name": "SEQ_BEM_APREENDIDO",
+     "type": "number"
+    },
+    {
+     "name": "CD_BEM",
+     "type": "string"
+    },
+    {
+     "name": "QTD_BEM_APREENDIDO",
+     "type": "number"
+    },
+    {
+     "name": "DES_UNIDADE_MEDIDA",
+     "type": "string"
+    },
+    {
+     "name": "DES_TIPO_BEM",
+     "type": "string"
+    },
+    {
+     "name": "DES_TIPO_INFRACAO",
+     "type": "string"
+    },
+    {
+     "name": "DES_BEM_APREENDIDO",
+     "type": "string"
+    },
+    {
+     "name": "TIPO_VEICULO",
+     "type": "string"
+    },
+    {
+     "name": "DES_MARCA",
+     "type": "string"
+    },
+    {
+     "name": "DES_MARCA_MODELO",
+     "type": "string"
+    },
+    {
+     "name": "DES_PLACA_VEICULO",
+     "type": "string"
+    },
+    {
+     "name": "DES_COR",
+     "type": "string"
+    },
+    {
+     "name": "CHASSI_NUM_MOTOR",
+     "type": "string"
+    },
+    {
+     "name": "DES_ANO_VEICULO",
+     "type": "number"
+    },
+    {
+     "name": "NU_ANO_MOD",
+     "type": "number"
+    },
+    {
+     "name": "DES_LACRE_VEICULO",
+     "type": "string"
+    },
+    {
+     "name": "NUM_INSCRICAO_MARINHA",
+     "type": "string"
+    },
+    {
+     "name": "NOME_MATRICULA",
+     "type": "string"
+    },
+    {
+     "name": "LICENCA_NUMERO_SERIE",
+     "type": "string"
+    },
+    {
+     "name": "DES_FABRICANTE",
+     "type": "string"
+    },
+    {
+     "name": "NU_VALOR",
+     "type": "string"
+    },
+    {
+     "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+     "type": "string"
+    }
+   ]
+  },
+  {
+   "id": "syn-03-list",
+   "kind": "synthetic",
+   "layout": "list",
+   "pdf": "pdfs/syn-03-list.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1",
+    "commit": "48f8c4700303a67360c8be261d43d415c194d610",
+    "dataset": "fiscalizacao-termo-de-destruicao-ou-inutilizacao",
+    "dictionary_url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/656f3fbb-febc-428a-9e01-2e2d4d54adab/resource/aa04d97f-0501-4d66-a3ef-6c36bdf9c0ef/download/metadados-termo-de-destruicao-ou-inutilizacao-bem-destruido.csv"
+   },
+   "fields": [
+    {
+     "name": "SEQ_TAD",
+     "type": "number"
+    },
+    {
+     "name": "NUM_TAD",
+     "type": "string"
+    },
+    {
+     "name": "SER_TAD",
+     "type": "string"
+    },
+    {
+     "name": "COD_SUBSTITUICAO",
+     "type": "string"
+    },
+    {
+     "name": "SEQ_BEM_APREENDIDO",
+     "type": "number"
+    },
+    {
+     "name": "CD_BEM",
+     "type": "string"
+    },
+    {
+     "name": "QTD_BEM_APREENDIDO",
+     "type": "number"
+    },
+    {
+     "name": "DES_UNIDADE_MEDIDA",
+     "type": "string"
+    },
+    {
+     "name": "DES_TIPO_BEM",
+     "type": "string"
+    },
+    {
+     "name": "DES_TIPO_INFRACAO",
+     "type": "string"
+    },
+    {
+     "name": "DES_BEM_APREENDIDO",
+     "type": "string"
+    },
+    {
+     "name": "TIPO_VEICULO",
+     "type": "string"
+    },
+    {
+     "name": "DES_MARCA",
+     "type": "string"
+    },
+    {
+     "name": "DES_MARCA_MODELO",
+     "type": "string"
+    },
+    {
+     "name": "DES_PLACA_VEICULO",
+     "type": "string"
+    },
+    {
+     "name": "DES_COR",
+     "type": "string"
+    },
+    {
+     "name": "CHASSI_NUM_MOTOR",
+     "type": "string"
+    },
+    {
+     "name": "DES_ANO_VEICULO",
+     "type": "number"
+    },
+    {
+     "name": "NU_ANO_MOD",
+     "type": "number"
+    },
+    {
+     "name": "DES_LACRE_VEICULO",
+     "type": "string"
+    },
+    {
+     "name": "NUM_INSCRICAO_MARINHA",
+     "type": "string"
+    },
+    {
+     "name": "NOME_MATRICULA",
+     "type": "string"
+    },
+    {
+     "name": "LICENCA_NUMERO_SERIE",
+     "type": "string"
+    },
+    {
+     "name": "DES_FABRICANTE",
+     "type": "string"
+    },
+    {
+     "name": "NU_VALOR",
+     "type": "string"
+    },
+    {
+     "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+     "type": "string"
+    }
+   ]
+  },
+  {
+   "id": "syn-03-table-reordered",
+   "kind": "synthetic",
+   "layout": "table-reordered",
+   "pdf": "pdfs/syn-03-table-reordered.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1",
+    "commit": "48f8c4700303a67360c8be261d43d415c194d610",
+    "dataset": "fiscalizacao-termo-de-destruicao-ou-inutilizacao",
+    "dictionary_url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/656f3fbb-febc-428a-9e01-2e2d4d54adab/resource/aa04d97f-0501-4d66-a3ef-6c36bdf9c0ef/download/metadados-termo-de-destruicao-ou-inutilizacao-bem-destruido.csv"
+   },
+   "fields": [
+    {
+     "name": "SEQ_TAD",
+     "type": "number"
+    },
+    {
+     "name": "NUM_TAD",
+     "type": "string"
+    },
+    {
+     "name": "SER_TAD",
+     "type": "string"
+    },
+    {
+     "name": "COD_SUBSTITUICAO",
+     "type": "string"
+    },
+    {
+     "name": "SEQ_BEM_APREENDIDO",
+     "type": "number"
+    },
+    {
+     "name": "CD_BEM",
+     "type": "string"
+    },
+    {
+     "name": "QTD_BEM_APREENDIDO",
+     "type": "number"
+    },
+    {
+     "name": "DES_UNIDADE_MEDIDA",
+     "type": "string"
+    },
+    {
+     "name": "DES_TIPO_BEM",
+     "type": "string"
+    },
+    {
+     "name": "DES_TIPO_INFRACAO",
+     "type": "string"
+    },
+    {
+     "name": "DES_BEM_APREENDIDO",
+     "type": "string"
+    },
+    {
+     "name": "TIPO_VEICULO",
+     "type": "string"
+    },
+    {
+     "name": "DES_MARCA",
+     "type": "string"
+    },
+    {
+     "name": "DES_MARCA_MODELO",
+     "type": "string"
+    },
+    {
+     "name": "DES_PLACA_VEICULO",
+     "type": "string"
+    },
+    {
+     "name": "DES_COR",
+     "type": "string"
+    },
+    {
+     "name": "CHASSI_NUM_MOTOR",
+     "type": "string"
+    },
+    {
+     "name": "DES_ANO_VEICULO",
+     "type": "number"
+    },
+    {
+     "name": "NU_ANO_MOD",
+     "type": "number"
+    },
+    {
+     "name": "DES_LACRE_VEICULO",
+     "type": "string"
+    },
+    {
+     "name": "NUM_INSCRICAO_MARINHA",
+     "type": "string"
+    },
+    {
+     "name": "NOME_MATRICULA",
+     "type": "string"
+    },
+    {
+     "name": "LICENCA_NUMERO_SERIE",
+     "type": "string"
+    },
+    {
+     "name": "DES_FABRICANTE",
+     "type": "string"
+    },
+    {
+     "name": "NU_VALOR",
+     "type": "string"
+    },
+    {
+     "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+     "type": "string"
+    }
+   ]
+  },
+  {
+   "id": "syn-04-prose",
+   "kind": "synthetic",
+   "layout": "prose",
+   "pdf": "pdfs/syn-04-prose.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1-recife",
+    "commit": "4c909d3add58c97e7cd39887187cb49b1ed2d5d9",
+    "dataset": "academias-da-cidade",
+    "dictionary_url": "https://dados.recife.pe.gov.br:443/dataset/807bd4a4-aba8-413e-8f6a-abfce82eaba3/resource/ffc1e418-fc33-43ed-bd92-068c32a692fe/download/dicionario-de-dados-da-academia-da-cidade.json"
+   },
+   "fields": [
+    {
+     "name": "nome_oficial",
+     "type": "string"
+    },
+    {
+     "name": "rpa",
+     "type": "number"
+    },
+    {
+     "name": "distrito_sanitario",
+     "type": "number"
+    },
+    {
+     "name": "micro_regiao",
+     "type": "string"
+    },
+    {
+     "name": "cnes",
+     "type": "number"
+    },
+    {
+     "name": "cod_nat",
+     "type": "string"
+    },
+    {
+     "name": "tipo_servico",
+     "type": "string"
+    },
+    {
+     "name": "endereco",
+     "type": "string"
+    },
+    {
+     "name": "bairro",
+     "type": "string"
+    },
+    {
+     "name": "fone",
+     "type": "string"
+    },
+    {
+     "name": "servico",
+     "type": "string"
+    },
+    {
+     "name": "especialidade",
+     "type": "string"
+    },
+    {
+     "name": "como_usar",
+     "type": "string"
+    },
+    {
+     "name": "horario",
+     "type": "string"
+    },
+    {
+     "name": "ordem",
+     "type": "string"
+    },
+    {
+     "name": "latitude",
+     "type": "number"
+    },
+    {
+     "name": "longitude",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "id": "syn-04-list",
+   "kind": "synthetic",
+   "layout": "list",
+   "pdf": "pdfs/syn-04-list.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1-recife",
+    "commit": "4c909d3add58c97e7cd39887187cb49b1ed2d5d9",
+    "dataset": "academias-da-cidade",
+    "dictionary_url": "https://dados.recife.pe.gov.br:443/dataset/807bd4a4-aba8-413e-8f6a-abfce82eaba3/resource/ffc1e418-fc33-43ed-bd92-068c32a692fe/download/dicionario-de-dados-da-academia-da-cidade.json"
+   },
+   "fields": [
+    {
+     "name": "nome_oficial",
+     "type": "string"
+    },
+    {
+     "name": "rpa",
+     "type": "number"
+    },
+    {
+     "name": "distrito_sanitario",
+     "type": "number"
+    },
+    {
+     "name": "micro_regiao",
+     "type": "string"
+    },
+    {
+     "name": "cnes",
+     "type": "number"
+    },
+    {
+     "name": "cod_nat",
+     "type": "string"
+    },
+    {
+     "name": "tipo_servico",
+     "type": "string"
+    },
+    {
+     "name": "endereco",
+     "type": "string"
+    },
+    {
+     "name": "bairro",
+     "type": "string"
+    },
+    {
+     "name": "fone",
+     "type": "string"
+    },
+    {
+     "name": "servico",
+     "type": "string"
+    },
+    {
+     "name": "especialidade",
+     "type": "string"
+    },
+    {
+     "name": "como_usar",
+     "type": "string"
+    },
+    {
+     "name": "horario",
+     "type": "string"
+    },
+    {
+     "name": "ordem",
+     "type": "string"
+    },
+    {
+     "name": "latitude",
+     "type": "number"
+    },
+    {
+     "name": "longitude",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "id": "syn-04-table-reordered",
+   "kind": "synthetic",
+   "layout": "table-reordered",
+   "pdf": "pdfs/syn-04-table-reordered.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1-recife",
+    "commit": "4c909d3add58c97e7cd39887187cb49b1ed2d5d9",
+    "dataset": "academias-da-cidade",
+    "dictionary_url": "https://dados.recife.pe.gov.br:443/dataset/807bd4a4-aba8-413e-8f6a-abfce82eaba3/resource/ffc1e418-fc33-43ed-bd92-068c32a692fe/download/dicionario-de-dados-da-academia-da-cidade.json"
+   },
+   "fields": [
+    {
+     "name": "nome_oficial",
+     "type": "string"
+    },
+    {
+     "name": "rpa",
+     "type": "number"
+    },
+    {
+     "name": "distrito_sanitario",
+     "type": "number"
+    },
+    {
+     "name": "micro_regiao",
+     "type": "string"
+    },
+    {
+     "name": "cnes",
+     "type": "number"
+    },
+    {
+     "name": "cod_nat",
+     "type": "string"
+    },
+    {
+     "name": "tipo_servico",
+     "type": "string"
+    },
+    {
+     "name": "endereco",
+     "type": "string"
+    },
+    {
+     "name": "bairro",
+     "type": "string"
+    },
+    {
+     "name": "fone",
+     "type": "string"
+    },
+    {
+     "name": "servico",
+     "type": "string"
+    },
+    {
+     "name": "especialidade",
+     "type": "string"
+    },
+    {
+     "name": "como_usar",
+     "type": "string"
+    },
+    {
+     "name": "horario",
+     "type": "string"
+    },
+    {
+     "name": "ordem",
+     "type": "string"
+    },
+    {
+     "name": "latitude",
+     "type": "number"
+    },
+    {
+     "name": "longitude",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "id": "syn-05-prose",
+   "kind": "synthetic",
+   "layout": "prose",
+   "pdf": "pdfs/syn-05-prose.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1",
+    "commit": "48f8c4700303a67360c8be261d43d415c194d610",
+    "dataset": "fiscalizacao-termo-de-doacao",
+    "dictionary_url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/6c9f6261-2b0a-4152-b8fa-748930de9bbd/resource/b3a63bc2-5fe2-4af0-9e7e-ec23194f32d3/download/metadados-termo-de-doacao-bem-doado.csv"
+   },
+   "fields": [
+    {
+     "name": "SEQ_DOACAO",
+     "type": "integer"
+    },
+    {
+     "name": "NUM_DOACAO",
+     "type": "string"
+    },
+    {
+     "name": "SER_DOACAO",
+     "type": "string"
+    },
+    {
+     "name": "COD_SUBSTITUICAO",
+     "type": "string"
+    },
+    {
+     "name": "SEQ_DOACAO_BEM",
+     "type": "integer"
+    },
+    {
+     "name": "DES_BEM_APREENDIDO",
+     "type": "string"
+    },
+    {
+     "name": "DES_TIPO_BEM",
+     "type": "string"
+    },
+    {
+     "name": "DES_TIPO_INFRACAO",
+     "type": "string"
+    },
+    {
+     "name": "QTD_DOACAO_BEM",
+     "type": "number"
+    },
+    {
+     "name": "DES_UNIDADE_MEDIDA",
+     "type": "string"
+    },
+    {
+     "name": "NU_VALOR",
+     "type": "number"
+    },
+    {
+     "name": "OBS_DOACAO_BEM",
+     "type": "string"
+    },
+    {
+     "name": "TIPO_VEICULO",
+     "type": "string"
+    },
+    {
+     "name": "DES_MARCA",
+     "type": "string"
+    },
+    {
+     "name": "DES_MODELO",
+     "type": "string"
+    },
+    {
+     "name": "DES_PLACA_VEICULO",
+     "type": "string"
+    },
+    {
+     "name": "DES_COR",
+     "type": "string"
+    },
+    {
+     "name": "CHASSI_NUM_MOTOR",
+     "type": "string"
+    },
+    {
+     "name": "DES_ANO_VEICULO",
+     "type": "integer"
+    },
+    {
+     "name": "NU_ANO_MOD",
+     "type": "integer"
+    },
+    {
+     "name": "DES_LACRE_VEICULO",
+     "type": "string"
+    },
+    {
+     "name": "NUM_INSCRICAO_MARINHA",
+     "type": "string"
+    },
+    {
+     "name": "NOME_MATRICULA",
+     "type": "string"
+    },
+    {
+     "name": "LICENCA_NUMERO_SERIE",
+     "type": "string"
+    },
+    {
+     "name": "DES_FABRICANTE",
+     "type": "string"
+    },
+    {
+     "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+     "type": "datetime"
+    }
+   ]
+  },
+  {
+   "id": "syn-05-list",
+   "kind": "synthetic",
+   "layout": "list",
+   "pdf": "pdfs/syn-05-list.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1",
+    "commit": "48f8c4700303a67360c8be261d43d415c194d610",
+    "dataset": "fiscalizacao-termo-de-doacao",
+    "dictionary_url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/6c9f6261-2b0a-4152-b8fa-748930de9bbd/resource/b3a63bc2-5fe2-4af0-9e7e-ec23194f32d3/download/metadados-termo-de-doacao-bem-doado.csv"
+   },
+   "fields": [
+    {
+     "name": "SEQ_DOACAO",
+     "type": "integer"
+    },
+    {
+     "name": "NUM_DOACAO",
+     "type": "string"
+    },
+    {
+     "name": "SER_DOACAO",
+     "type": "string"
+    },
+    {
+     "name": "COD_SUBSTITUICAO",
+     "type": "string"
+    },
+    {
+     "name": "SEQ_DOACAO_BEM",
+     "type": "integer"
+    },
+    {
+     "name": "DES_BEM_APREENDIDO",
+     "type": "string"
+    },
+    {
+     "name": "DES_TIPO_BEM",
+     "type": "string"
+    },
+    {
+     "name": "DES_TIPO_INFRACAO",
+     "type": "string"
+    },
+    {
+     "name": "QTD_DOACAO_BEM",
+     "type": "number"
+    },
+    {
+     "name": "DES_UNIDADE_MEDIDA",
+     "type": "string"
+    },
+    {
+     "name": "NU_VALOR",
+     "type": "number"
+    },
+    {
+     "name": "OBS_DOACAO_BEM",
+     "type": "string"
+    },
+    {
+     "name": "TIPO_VEICULO",
+     "type": "string"
+    },
+    {
+     "name": "DES_MARCA",
+     "type": "string"
+    },
+    {
+     "name": "DES_MODELO",
+     "type": "string"
+    },
+    {
+     "name": "DES_PLACA_VEICULO",
+     "type": "string"
+    },
+    {
+     "name": "DES_COR",
+     "type": "string"
+    },
+    {
+     "name": "CHASSI_NUM_MOTOR",
+     "type": "string"
+    },
+    {
+     "name": "DES_ANO_VEICULO",
+     "type": "integer"
+    },
+    {
+     "name": "NU_ANO_MOD",
+     "type": "integer"
+    },
+    {
+     "name": "DES_LACRE_VEICULO",
+     "type": "string"
+    },
+    {
+     "name": "NUM_INSCRICAO_MARINHA",
+     "type": "string"
+    },
+    {
+     "name": "NOME_MATRICULA",
+     "type": "string"
+    },
+    {
+     "name": "LICENCA_NUMERO_SERIE",
+     "type": "string"
+    },
+    {
+     "name": "DES_FABRICANTE",
+     "type": "string"
+    },
+    {
+     "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+     "type": "datetime"
+    }
+   ]
+  },
+  {
+   "id": "syn-05-table-reordered",
+   "kind": "synthetic",
+   "layout": "table-reordered",
+   "pdf": "pdfs/syn-05-table-reordered.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1",
+    "commit": "48f8c4700303a67360c8be261d43d415c194d610",
+    "dataset": "fiscalizacao-termo-de-doacao",
+    "dictionary_url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/6c9f6261-2b0a-4152-b8fa-748930de9bbd/resource/b3a63bc2-5fe2-4af0-9e7e-ec23194f32d3/download/metadados-termo-de-doacao-bem-doado.csv"
+   },
+   "fields": [
+    {
+     "name": "SEQ_DOACAO",
+     "type": "integer"
+    },
+    {
+     "name": "NUM_DOACAO",
+     "type": "string"
+    },
+    {
+     "name": "SER_DOACAO",
+     "type": "string"
+    },
+    {
+     "name": "COD_SUBSTITUICAO",
+     "type": "string"
+    },
+    {
+     "name": "SEQ_DOACAO_BEM",
+     "type": "integer"
+    },
+    {
+     "name": "DES_BEM_APREENDIDO",
+     "type": "string"
+    },
+    {
+     "name": "DES_TIPO_BEM",
+     "type": "string"
+    },
+    {
+     "name": "DES_TIPO_INFRACAO",
+     "type": "string"
+    },
+    {
+     "name": "QTD_DOACAO_BEM",
+     "type": "number"
+    },
+    {
+     "name": "DES_UNIDADE_MEDIDA",
+     "type": "string"
+    },
+    {
+     "name": "NU_VALOR",
+     "type": "number"
+    },
+    {
+     "name": "OBS_DOACAO_BEM",
+     "type": "string"
+    },
+    {
+     "name": "TIPO_VEICULO",
+     "type": "string"
+    },
+    {
+     "name": "DES_MARCA",
+     "type": "string"
+    },
+    {
+     "name": "DES_MODELO",
+     "type": "string"
+    },
+    {
+     "name": "DES_PLACA_VEICULO",
+     "type": "string"
+    },
+    {
+     "name": "DES_COR",
+     "type": "string"
+    },
+    {
+     "name": "CHASSI_NUM_MOTOR",
+     "type": "string"
+    },
+    {
+     "name": "DES_ANO_VEICULO",
+     "type": "integer"
+    },
+    {
+     "name": "NU_ANO_MOD",
+     "type": "integer"
+    },
+    {
+     "name": "DES_LACRE_VEICULO",
+     "type": "string"
+    },
+    {
+     "name": "NUM_INSCRICAO_MARINHA",
+     "type": "string"
+    },
+    {
+     "name": "NOME_MATRICULA",
+     "type": "string"
+    },
+    {
+     "name": "LICENCA_NUMERO_SERIE",
+     "type": "string"
+    },
+    {
+     "name": "DES_FABRICANTE",
+     "type": "string"
+    },
+    {
+     "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+     "type": "datetime"
+    }
+   ]
+  },
+  {
+   "id": "syn-06-prose",
+   "kind": "synthetic",
+   "layout": "prose",
+   "pdf": "pdfs/syn-06-prose.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1-recife",
+    "commit": "4c909d3add58c97e7cd39887187cb49b1ed2d5d9",
+    "dataset": "acidentes-de-transito-c-vitimas-2016",
+    "dictionary_url": "https://dados.recife.pe.gov.br:443/dataset/aae84d3e-63be-4f5f-a14e-281bc7a2ff96/resource/1ce366cb-6fba-4366-bd26-d5806a75b359/download/metadados-de-acidente-de-transito-com-vitimas.json"
+   },
+   "fields": [
+    {
+     "name": "data_abertura",
+     "type": "date"
+    },
+    {
+     "name": "hora_abertura",
+     "type": "string"
+    },
+    {
+     "name": "bairro",
+     "type": "string"
+    },
+    {
+     "name": "endereco",
+     "type": "string"
+    },
+    {
+     "name": "complemento",
+     "type": "string"
+    },
+    {
+     "name": "tipo_ocorrencia",
+     "type": "string"
+    },
+    {
+     "name": "quantidade_vitimas",
+     "type": "number"
+    },
+    {
+     "name": "descricao",
+     "type": "string"
+    },
+    {
+     "name": "tipo",
+     "type": "string"
+    },
+    {
+     "name": "latitude",
+     "type": "number"
+    },
+    {
+     "name": "longitude",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "id": "syn-06-list",
+   "kind": "synthetic",
+   "layout": "list",
+   "pdf": "pdfs/syn-06-list.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1-recife",
+    "commit": "4c909d3add58c97e7cd39887187cb49b1ed2d5d9",
+    "dataset": "acidentes-de-transito-c-vitimas-2016",
+    "dictionary_url": "https://dados.recife.pe.gov.br:443/dataset/aae84d3e-63be-4f5f-a14e-281bc7a2ff96/resource/1ce366cb-6fba-4366-bd26-d5806a75b359/download/metadados-de-acidente-de-transito-com-vitimas.json"
+   },
+   "fields": [
+    {
+     "name": "data_abertura",
+     "type": "date"
+    },
+    {
+     "name": "hora_abertura",
+     "type": "string"
+    },
+    {
+     "name": "bairro",
+     "type": "string"
+    },
+    {
+     "name": "endereco",
+     "type": "string"
+    },
+    {
+     "name": "complemento",
+     "type": "string"
+    },
+    {
+     "name": "tipo_ocorrencia",
+     "type": "string"
+    },
+    {
+     "name": "quantidade_vitimas",
+     "type": "number"
+    },
+    {
+     "name": "descricao",
+     "type": "string"
+    },
+    {
+     "name": "tipo",
+     "type": "string"
+    },
+    {
+     "name": "latitude",
+     "type": "number"
+    },
+    {
+     "name": "longitude",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "id": "syn-06-table-reordered",
+   "kind": "synthetic",
+   "layout": "table-reordered",
+   "pdf": "pdfs/syn-06-table-reordered.pdf",
+   "source": {
+    "repo": "lsp3cesarschool/5ltep-layer1-recife",
+    "commit": "4c909d3add58c97e7cd39887187cb49b1ed2d5d9",
+    "dataset": "acidentes-de-transito-c-vitimas-2016",
+    "dictionary_url": "https://dados.recife.pe.gov.br:443/dataset/aae84d3e-63be-4f5f-a14e-281bc7a2ff96/resource/1ce366cb-6fba-4366-bd26-d5806a75b359/download/metadados-de-acidente-de-transito-com-vitimas.json"
+   },
+   "fields": [
+    {
+     "name": "data_abertura",
+     "type": "date"
+    },
+    {
+     "name": "hora_abertura",
+     "type": "string"
+    },
+    {
+     "name": "bairro",
+     "type": "string"
+    },
+    {
+     "name": "endereco",
+     "type": "string"
+    },
+    {
+     "name": "complemento",
+     "type": "string"
+    },
+    {
+     "name": "tipo_ocorrencia",
+     "type": "string"
+    },
+    {
+     "name": "quantidade_vitimas",
+     "type": "number"
+    },
+    {
+     "name": "descricao",
+     "type": "string"
+    },
+    {
+     "name": "tipo",
+     "type": "string"
+    },
+    {
+     "name": "latitude",
+     "type": "number"
+    },
+    {
+     "name": "longitude",
+     "type": "number"
+    }
+   ]
+  }
+ ]
+}
