@@ -1,0 +1,52 @@
+{
+ "entries": [
+  {
+   "label": "qwen3:1.7b",
+   "backend": "ollama",
+   "model": "qwen3:1.7b",
+   "size_gb": 1.36,
+   "digest": "8f68893c685c3ddff2aa3fffce2aa60a30bb2da65ca488b61fff134a4d1730e7",
+   "source": "discovered",
+   "discovered_at": "2026-10-02T10:56:17+00:00",
+   "options": {
+    "think": false
+   }
+  },
+  {
+   "label": "qwen3:4b-q4_K_M",
+   "backend": "ollama",
+   "model": "qwen3:4b-q4_K_M",
+   "size_gb": 2.62,
+   "digest": "2bfd38a7daaf4b1037efe517ccb73d1a3bbd4822cf89f1a82be1569050a114e0",
+   "source": "discovered",
+   "discovered_at": "2026-10-02T10:56:19+00:00",
+   "options": {
+    "think": false
+   }
+  },
+  {
+   "label": "qwen3:8b-q4_K_M",
+   "backend": "ollama",
+   "model": "qwen3:8b-q4_K_M",
+   "size_gb": 5.23,
+   "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+   "source": "discovered",
+   "discovered_at": "2026-10-02T10:56:19+00:00",
+   "options": {
+    "think": false
+   }
+  },
+  {
+   "label": "qwen3.5:0.8b",
+   "backend": "ollama",
+   "model": "qwen3.5:0.8b",
+   "size_gb": 1.04,
+   "digest": "f3817196d142eaf72ce79dfebe53dcb20bd21da87ce13e138a8f8e10a866b3a4",
+   "source": "discovered",
+   "discovered_at": "2026-10-02T10:56:20+00:00",
+   "options": {
+    "think": false
+   }
+  }
+ ]
+}

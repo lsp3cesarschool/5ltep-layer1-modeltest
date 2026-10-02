@@ -1,0 +1,1129 @@
+{
+ "key": "6782891211a7412a",
+ "label": "qwen3:8b",
+ "stage": "confirm",
+ "shard": 1,
+ "shards": 2,
+ "upstream_ref": "48f8c4700303a67360c8be261d43d415c194d610",
+ "gold_hash": "2d26a24c573db32ae6c53b0eb39d3f32de56b18c0b87989d4148970d1627d98f",
+ "cases_total": 15,
+ "cases_done": 15,
+ "stopped": null,
+ "server": {
+  "model": "qwen3:8b",
+  "ollama_version": "0.35.0",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41"
+ },
+ "production_parameters": {
+  "temperature": 0,
+  "seed": 42,
+  "num_ctx": 16384,
+  "num_predict": 6000,
+  "think": "false",
+  "prompt_version": "v1"
+ },
+ "started_at": "2026-10-02T12:05:20+00:00",
+ "ended_at": "2026-10-02T13:09:14+00:00",
+ "answers": [
+  {
+   "case": "real-02",
+   "seconds": 140.0,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "codigo",
+     "type": "Num"
+    },
+    {
+     "name": "modalidade",
+     "type": "Char"
+    },
+    {
+     "name": "nome",
+     "type": "Char"
+    },
+    {
+     "name": "tipo_sede",
+     "type": "Char"
+    },
+    {
+     "name": "data_fundacao",
+     "type": "Date"
+    },
+    {
+     "name": "cnpj",
+     "type": "Num"
+    },
+    {
+     "name": "bairro",
+     "type": "Char"
+    },
+    {
+     "name": "cidade",
+     "type": "Char"
+    },
+    {
+     "name": "rpa",
+     "type": "Char"
+    },
+    {
+     "name": "uf",
+     "type": "Char"
+    },
+    {
+     "name": "filiacao",
+     "type": "Char"
+    }
+   ]
+  },
+  {
+   "case": "real-04",
+   "seconds": 683.1,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "ano_movimentacao",
+     "type": "Num"
+    },
+    {
+     "name": "mes_movimentacao",
+     "type": "Data"
+    },
+    {
+     "name": "orgao_codigo",
+     "type": "Num"
+    },
+    {
+     "name": "orgao_nome",
+     "type": "Char"
+    },
+    {
+     "name": "unidade_codigo",
+     "type": "Char"
+    },
+    {
+     "name": "unidade_nome",
+     "type": "Char"
+    },
+    {
+     "name": "categoria_economica_codigo",
+     "type": "Num"
+    },
+    {
+     "name": "categoria_economica_nome",
+     "type": "Char"
+    },
+    {
+     "name": "grupo_despesa_codigo",
+     "type": "Num"
+    },
+    {
+     "name": "grupo_despesa_nome",
+     "type": "Char"
+    },
+    {
+     "name": "modalidade_aplicacao_codigo",
+     "type": "Num"
+    },
+    {
+     "name": "modalidade_aplicacao_nome",
+     "type": "Char"
+    },
+    {
+     "name": "elemento_codigo",
+     "type": "Num"
+    },
+    {
+     "name": "elemento_nome",
+     "type": "Char"
+    },
+    {
+     "name": "subelemento_codigo",
+     "type": "Num"
+    },
+    {
+     "name": "subelemento_nome",
+     "type": "Char"
+    },
+    {
+     "name": "funcao_codigo",
+     "type": "Num"
+    },
+    {
+     "name": "funcao_nome",
+     "type": "Char"
+    },
+    {
+     "name": "subfuncao_codigo",
+     "type": "Num"
+    },
+    {
+     "name": "subfuncao_nome",
+     "type": "Char"
+    },
+    {
+     "name": "programa_codigo",
+     "type": "Num"
+    },
+    {
+     "name": "programa_nome",
+     "type": "Char"
+    },
+    {
+     "name": "acao_codigo",
+     "type": "Num"
+    },
+    {
+     "name": "acao_nome",
+     "type": "Char"
+    },
+    {
+     "name": "fonte_recurso_codigo",
+     "type": "Num"
+    },
+    {
+     "name": "fonte_recurso_nome",
+     "type": "Char"
+    },
+    {
+     "name": "empenho_ano",
+     "type": "Num"
+    },
+    {
+     "name": "empenho_modalidade_nome",
+     "type": "Num"
+    },
+    {
+     "name": "empenho_modalidade_codigo",
+     "type": "Char"
+    },
+    {
+     "name": "empenho_numero",
+     "type": "Num"
+    },
+    {
+     "name": "subempenho",
+     "type": "Num"
+    },
+    {
+     "name": "indicador_subempenho",
+     "type": "Char"
+    },
+    {
+     "name": "credor_codigo",
+     "type": "Num"
+    },
+    {
+     "name": "credor_nome",
+     "type": "Char"
+    },
+    {
+     "name": "modalidade_licitacao_codigo",
+     "type": "Num"
+    },
+    {
+     "name": "modalidade_licitacao_nome",
+     "type": "Char"
+    },
+    {
+     "name": "valor_empenhado",
+     "type": "Num"
+    },
+    {
+     "name": "valor_liquidado",
+     "type": "Num"
+    },
+    {
+     "name": "valor_pago",
+     "type": "Num"
+    }
+   ]
+  },
+  {
+   "case": "real-06",
+   "seconds": 389.7,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "ano",
+     "type": "Num"
+    },
+    {
+     "name": "mes",
+     "type": "Num"
+    },
+    {
+     "name": "mes_nome",
+     "type": "Char"
+    },
+    {
+     "name": "orgao_codigo",
+     "type": "Num"
+    },
+    {
+     "name": "orgao_nome",
+     "type": "Char"
+    },
+    {
+     "name": "unidade_codigo",
+     "type": "Char"
+    },
+    {
+     "name": "unidade_nome",
+     "type": "Char"
+    },
+    {
+     "name": "fonte_recurso_codigo",
+     "type": "Num"
+    },
+    {
+     "name": "fonte_recurso_nome",
+     "type": "Char"
+    },
+    {
+     "name": "categoria_receita_codigo",
+     "type": "Num"
+    },
+    {
+     "name": "categoria_receita_nome",
+     "type": "Char"
+    },
+    {
+     "name": "fonte_origem_receita_codigo",
+     "type": "Num"
+    },
+    {
+     "name": "fonte_origem_receita_nome",
+     "type": "Char"
+    },
+    {
+     "name": "subfonte_receita_codigo",
+     "type": "Num"
+    },
+    {
+     "name": "subfonte_receita_nome",
+     "type": "Char"
+    },
+    {
+     "name": "rubrica_receita_codigo",
+     "type": "Num"
+    },
+    {
+     "name": "rubrica_receita_nome",
+     "type": "Char"
+    },
+    {
+     "name": "alinea_receita_codigo",
+     "type": "Num"
+    },
+    {
+     "name": "alinea_receita_nome",
+     "type": "Char"
+    },
+    {
+     "name": "subalinea_receita_codigo",
+     "type": "Num"
+    },
+    {
+     "name": "subalinea_receita_nome",
+     "type": "Char"
+    },
+    {
+     "name": "receita_local_codigo",
+     "type": "Num"
+    },
+    {
+     "name": "receita_local_nome",
+     "type": "Char"
+    },
+    {
+     "name": "receita_prevista",
+     "type": "Num"
+    },
+    {
+     "name": "receita_prevista_acrescimo",
+     "type": "Num"
+    },
+    {
+     "name": "receita_prevista_atualizada",
+     "type": "Num"
+    },
+    {
+     "name": "receita_arrecadada",
+     "type": "Num"
+    }
+   ]
+  },
+  {
+   "case": "real-08",
+   "seconds": 178.8,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "nome_popular",
+     "type": "Char"
+    },
+    {
+     "name": "numero",
+     "type": "Num"
+    },
+    {
+     "name": "familia",
+     "type": "Char"
+    },
+    {
+     "name": "nome_cientifico",
+     "type": "Char"
+    },
+    {
+     "name": "este",
+     "type": "real"
+    },
+    {
+     "name": "endereco",
+     "type": "Char"
+    },
+    {
+     "name": "norte",
+     "type": "real"
+    },
+    {
+     "name": "decreto",
+     "type": "Char"
+    },
+    {
+     "name": "microregiao",
+     "type": "Char"
+    },
+    {
+     "name": "rpa",
+     "type": "Num"
+    },
+    {
+     "name": "identifica",
+     "type": "Num"
+    },
+    {
+     "name": "observacao",
+     "type": "Char"
+    },
+    {
+     "name": "latitude",
+     "type": "real"
+    },
+    {
+     "name": "longitude",
+     "type": "real"
+    }
+   ]
+  },
+  {
+   "case": "real-10",
+   "seconds": 81.2,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "intervalo",
+     "type": "Char"
+    },
+    {
+     "name": "setor",
+     "type": "Char"
+    },
+    {
+     "name": "endereco",
+     "type": "Char"
+    },
+    {
+     "name": "turno",
+     "type": "Char"
+    },
+    {
+     "name": "rota_setor",
+     "type": "Num"
+    },
+    {
+     "name": "frequencia",
+     "type": "Char"
+    }
+   ]
+  },
+  {
+   "case": "real-12",
+   "seconds": 200.4,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "num_dispensa",
+     "type": "CHAR"
+    },
+    {
+     "name": "situacao_dispensa",
+     "type": "CHAR"
+    },
+    {
+     "name": "unidade",
+     "type": "CHAR"
+    },
+    {
+     "name": "objeto",
+     "type": "CHAR"
+    },
+    {
+     "name": "local_de_execucao",
+     "type": "CHAR"
+    },
+    {
+     "name": "data_de_empenho_contrato",
+     "type": "DATE"
+    },
+    {
+     "name": "data_vigencia",
+     "type": "DATE"
+    },
+    {
+     "name": "cnpj_cpf",
+     "type": "CHAR"
+    },
+    {
+     "name": "nome_fornecedor",
+     "type": "CHAR"
+    },
+    {
+     "name": "valor_fornecedor",
+     "type": "NUMERIC"
+    },
+    {
+     "name": "Arquivo_dispensa",
+     "type": "CHAR"
+    },
+    {
+     "name": "arquivo_situacao",
+     "type": "CHAR"
+    }
+   ]
+  },
+  {
+   "case": "syn-01-list",
+   "seconds": 173.6,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "SEQ_TAD",
+     "type": "int"
+    },
+    {
+     "name": "NUM_TAD",
+     "type": "varchar"
+    },
+    {
+     "name": "SER_TAD",
+     "type": "int"
+    },
+    {
+     "name": "COD_SUBSTITUICAO",
+     "type": "int"
+    },
+    {
+     "name": "ADMINISTRATIVO",
+     "type": "char"
+    },
+    {
+     "name": "NORMA_TIPO",
+     "type": "varchar"
+    },
+    {
+     "name": "NORMA_NUMERO",
+     "type": "int"
+    },
+    {
+     "name": "ARTIGO",
+     "type": "int"
+    },
+    {
+     "name": "NU_PARAGRAFO",
+     "type": "int"
+    },
+    {
+     "name": "NU_INCISO",
+     "type": "int"
+    },
+    {
+     "name": "CD_ALINEA",
+     "type": "varchar"
+    },
+    {
+     "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+     "type": "timestamp"
+    }
+   ]
+  },
+  {
+   "case": "syn-02-prose",
+   "seconds": 116.6,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "polo",
+     "type": "Char"
+    },
+    {
+     "name": "rpa",
+     "type": "Num"
+    },
+    {
+     "name": "logradouro",
+     "type": "Char"
+    },
+    {
+     "name": "bairro",
+     "type": "Char"
+    },
+    {
+     "name": "observacao",
+     "type": "Char"
+    },
+    {
+     "name": "datainauguracao",
+     "type": "DATE"
+    },
+    {
+     "name": "latitude",
+     "type": "Num"
+    },
+    {
+     "name": "longitude",
+     "type": "Num"
+    }
+   ]
+  },
+  {
+   "case": "syn-02-table-reordered",
+   "seconds": 124.0,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "Nome do Polo",
+     "type": "Char"
+    },
+    {
+     "name": "Região Politico Administrativa",
+     "type": "Num"
+    },
+    {
+     "name": "endereço onde a academia está localizada",
+     "type": "Char"
+    },
+    {
+     "name": "Nome do Bairro",
+     "type": "Char"
+    },
+    {
+     "name": "complemento do local onde se encontra a academia",
+     "type": "Char"
+    },
+    {
+     "name": "Data em que foi inaugurada a academia",
+     "type": "DATE"
+    },
+    {
+     "name": "Coordenadas geográficas em graus decimais - Latitude",
+     "type": "Num"
+    },
+    {
+     "name": "Coordenadas geográficas em graus decimais - Longitude",
+     "type": "Num"
+    }
+   ]
+  },
+  {
+   "case": "syn-03-list",
+   "seconds": 469.8,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "SEQ_TAD",
+     "type": "tipo numero"
+    },
+    {
+     "name": "NUM_TAD",
+     "type": "tipo string"
+    },
+    {
+     "name": "SER_TAD",
+     "type": "tipo string"
+    },
+    {
+     "name": "COD_SUBSTITUICAO",
+     "type": "tipo string"
+    },
+    {
+     "name": "SEQ_BEM_APREENDIDO",
+     "type": "tipo numero"
+    },
+    {
+     "name": "CD_BEM",
+     "type": "tipo string"
+    },
+    {
+     "name": "QTD_BEM_APREENDIDO",
+     "type": "tipo numero"
+    },
+    {
+     "name": "DES_UNIDADE_MEDIDA",
+     "type": "tipo string"
+    },
+    {
+     "name": "DES_TIPO_BEM",
+     "type": "tipo string"
+    },
+    {
+     "name": "DES_TIPO_INFRACAO",
+     "type": "tipo string"
+    },
+    {
+     "name": "DES_BEM_APREENDIDO",
+     "type": "tipo string"
+    },
+    {
+     "name": "TIPO_VEICULO",
+     "type": "tipo string"
+    },
+    {
+     "name": "DES_MARCA",
+     "type": "tipo string"
+    },
+    {
+     "name": "DES_MARCA_MODELO",
+     "type": "tipo string"
+    },
+    {
+     "name": "DES_PLACA_VEICULO",
+     "type": "tipo string"
+    },
+    {
+     "name": "DES_COR",
+     "type": "tipo string"
+    },
+    {
+     "name": "CHASSI_NUM_MOTOR",
+     "type": "tipo string"
+    },
+    {
+     "name": "DES_ANO_VEICULO",
+     "type": "tipo numero"
+    },
+    {
+     "name": "NU_ANO_MOD",
+     "type": "tipo numero"
+    },
+    {
+     "name": "DES_LACRE_VEICULO",
+     "type": "tipo string"
+    },
+    {
+     "name": "NUM_INSCRICAO_MARINHA",
+     "type": "tipo string"
+    },
+    {
+     "name": "NOME_MATRICULA",
+     "type": "tipo string"
+    },
+    {
+     "name": "LICENCA_NUMERO_SERIE",
+     "type": "tipo string"
+    },
+    {
+     "name": "DES_FABRICANTE",
+     "type": "tipo string"
+    },
+    {
+     "name": "NU_VALOR",
+     "type": "tipo string"
+    },
+    {
+     "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+     "type": "tipo string"
+    }
+   ]
+  },
+  {
+   "case": "syn-04-prose",
+   "seconds": 266.4,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "nome_oficial",
+     "type": "Char"
+    },
+    {
+     "name": "rpa",
+     "type": "Num"
+    },
+    {
+     "name": "distrito_sanitario",
+     "type": "Num"
+    },
+    {
+     "name": "micro_regiao",
+     "type": "char"
+    },
+    {
+     "name": "cnes",
+     "type": "Num"
+    },
+    {
+     "name": "cod_nat",
+     "type": "Char"
+    },
+    {
+     "name": "tipo_servico",
+     "type": "Char"
+    },
+    {
+     "name": "endereco",
+     "type": "Char"
+    },
+    {
+     "name": "bairro",
+     "type": "Char"
+    },
+    {
+     "name": "fone",
+     "type": "Char"
+    },
+    {
+     "name": "servico",
+     "type": "Char"
+    },
+    {
+     "name": "especialidade",
+     "type": "Char"
+    },
+    {
+     "name": "como_usar",
+     "type": "Char"
+    },
+    {
+     "name": "horario",
+     "type": "Char"
+    },
+    {
+     "name": "ordem",
+     "type": "char"
+    },
+    {
+     "name": "latitude",
+     "type": "Num"
+    },
+    {
+     "name": "longitude",
+     "type": "Num"
+    }
+   ]
+  },
+  {
+   "case": "syn-04-table-reordered",
+   "seconds": 279.9,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "Nome da Academia da Cidade",
+     "type": "Char"
+    },
+    {
+     "name": "Região Politico Administrativa",
+     "type": "Num"
+    },
+    {
+     "name": "distrito_sanitario",
+     "type": "Num"
+    },
+    {
+     "name": "Subdivisão de Região Político-Administrativa (Microrregião)",
+     "type": "char"
+    },
+    {
+     "name": "Código no Cadastro Nacional de Estabelecimentos de Saúde",
+     "type": "Num"
+    },
+    {
+     "name": "Natureza do Serviço",
+     "type": "Char"
+    },
+    {
+     "name": "Tipo de serviço oferecido",
+     "type": "Char"
+    },
+    {
+     "name": "Endereço (Logradouro, número da residência)",
+     "type": "Char"
+    },
+    {
+     "name": "Nome do Bairro",
+     "type": "Char"
+    },
+    {
+     "name": "Telefone de contato",
+     "type": "Char"
+    },
+    {
+     "name": "Tipo do serviço",
+     "type": "Char"
+    },
+    {
+     "name": "especialidade do serviço",
+     "type": "Char"
+    },
+    {
+     "name": "explica com utilizar o serviço",
+     "type": "Char"
+    },
+    {
+     "name": "Horário das aulas/exercício",
+     "type": "Char"
+    },
+    {
+     "name": "número de ordem. Utilizado internamente",
+     "type": "char"
+    },
+    {
+     "name": "Coordenadas geográficas em graus decimais - Latitude",
+     "type": "Num"
+    },
+    {
+     "name": "Coordenadas geográficas em graus decimais - Longitude",
+     "type": "Num"
+    }
+   ]
+  },
+  {
+   "case": "syn-05-list",
+   "seconds": 444.9,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "SEQ_DOACAO",
+     "type": "INTEGER"
+    },
+    {
+     "name": "NUM_DOACAO",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "SER_DOACAO",
+     "type": "CHAR"
+    },
+    {
+     "name": "COD_SUBSTITUICAO",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "SEQ_DOACAO_BEM",
+     "type": "INTEGER"
+    },
+    {
+     "name": "DES_BEM_APREENDIDO",
+     "type": "TEXT"
+    },
+    {
+     "name": "DES_TIPO_BEM",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "DES_TIPO_INFRACAO",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "QTD_DOACAO_BEM",
+     "type": "DECIMAL"
+    },
+    {
+     "name": "DES_UNIDADE_MEDIDA",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "NU_VALOR",
+     "type": "DECIMAL"
+    },
+    {
+     "name": "OBS_DOACAO_BEM",
+     "type": "TEXT"
+    },
+    {
+     "name": "TIPO_VEICULO",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "DES_MARCA",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "DES_MODELO",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "DES_PLACA_VEICULO",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "DES_COR",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "CHASSI_NUM_MOTOR",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "DES_ANO_VEICULO",
+     "type": "INTEGER"
+    },
+    {
+     "name": "NU_ANO_MOD",
+     "type": "INTEGER"
+    },
+    {
+     "name": "DES_LACRE_VEICULO",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "NUM_INSCRICAO_MARINHA",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "NOME_MATRICULA",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "LICENCA_NUMERO_SERIE",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "DES_FABRICANTE",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+     "type": "DATETIME"
+    }
+   ]
+  },
+  {
+   "case": "syn-06-prose",
+   "seconds": 147.8,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "data_abertura",
+     "type": "Date"
+    },
+    {
+     "name": "hora_abertura",
+     "type": "Char"
+    },
+    {
+     "name": "bairro",
+     "type": "Char"
+    },
+    {
+     "name": "endereco",
+     "type": "Char"
+    },
+    {
+     "name": "complemento",
+     "type": "Char"
+    },
+    {
+     "name": "tipo_ocorrencia",
+     "type": "Char"
+    },
+    {
+     "name": "quantidade_vitimas",
+     "type": "Num"
+    },
+    {
+     "name": "descricao",
+     "type": "Char"
+    },
+    {
+     "name": "tipo",
+     "type": "Char"
+    },
+    {
+     "name": "latitude",
+     "type": "Num"
+    },
+    {
+     "name": "longitude",
+     "type": "Num"
+    }
+   ]
+  },
+  {
+   "case": "syn-06-table-reordered",
+   "seconds": 137.4,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "data_abertura",
+     "type": "Date"
+    },
+    {
+     "name": "hora_abertura",
+     "type": "Char"
+    },
+    {
+     "name": "bairro",
+     "type": "Char"
+    },
+    {
+     "name": "endereco",
+     "type": "Char"
+    },
+    {
+     "name": "complemento",
+     "type": "Char"
+    },
+    {
+     "name": "tipo_ocorrencia",
+     "type": "Char"
+    },
+    {
+     "name": "quantidade_vitimas",
+     "type": "Num"
+    },
+    {
+     "name": "descricao",
+     "type": "Char"
+    },
+    {
+     "name": "tipo",
+     "type": "Char"
+    },
+    {
+     "name": "latitude",
+     "type": "Num"
+    },
+    {
+     "name": "longitude",
+     "type": "Num"
+    }
+   ]
+  }
+ ]
+}

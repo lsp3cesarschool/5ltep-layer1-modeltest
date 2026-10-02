@@ -1,0 +1,372 @@
+{
+ "generated_at": "2026-10-02T13:50:52+00:00",
+ "gold_hash": "2d26a24c573db32ae6c53b0eb39d3f32de56b18c0b87989d4148970d1627d98f",
+ "gold_cases": 30,
+ "prompt": {
+  "commit": "48f8c4700303a67360c8be261d43d415c194d610",
+  "fingerprint": "fa25919df6a80c027bcbc45c398dea8db5dabbace80dc1e028cde5e1dd8eee18"
+ },
+ "selection": {
+  "triage_cases": 12,
+  "finalists": 3,
+  "confirm_shards": 2,
+  "min_valid_rate": 0.9,
+  "min_coverage": 0.9,
+  "max_call_seconds": 1800,
+  "monthly_budget_hours": 40,
+  "expected_pdfs_per_month": 150,
+  "switch_margin_f1": 0.03,
+  "bootstrap_resamples": 2000,
+  "min_age_days_to_adopt": 30,
+  "budget_minutes": 300
+ },
+ "finalists": [
+  "llama3.1:8b",
+  "ministral-3:8b",
+  "gemma3:12b",
+  "qwen3:8b"
+ ],
+ "deterministic_reference": {
+  "f1": 0.5626,
+  "em": 0.559,
+  "per_layout": {
+   "real/portal": 1.0,
+   "synthetic/list": 0.0,
+   "synthetic/prose": 0.0,
+   "synthetic/table-reordered": 0.8129
+  }
+ },
+ "rows": [
+  {
+   "label": "qwen3:8b",
+   "model": "qwen3:8b",
+   "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+   "stage": "confirm",
+   "eligible": true,
+   "cases": 30,
+   "coverage": 1.0,
+   "f1": 0.9261,
+   "f1_ci95": [
+    0.8296,
+    0.9947
+   ],
+   "em": 0.9261,
+   "ls": 0.9513,
+   "types": 1.0,
+   "valid_rate": 1.0,
+   "latency_median_s": 228.4,
+   "latency_p90_s": 608.2,
+   "mean_s": 307.0,
+   "pdfs_per_hour": 11.7,
+   "per_layout": {
+    "real/portal": 1.0,
+    "synthetic/list": 1.0,
+    "synthetic/prose": 1.0,
+    "synthetic/table-reordered": 0.6305
+   },
+   "partial": false,
+   "tested_at": "2026-10-02T13:35:01+00:00"
+  },
+  {
+   "label": "qwen3:4b",
+   "model": "qwen3:4b",
+   "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+   "stage": "triage",
+   "eligible": false,
+   "cases": 12,
+   "coverage": 1.0,
+   "f1": 0.8168,
+   "f1_ci95": [
+    0.5764,
+    0.9904
+   ],
+   "em": 0.8168,
+   "ls": 0.8898,
+   "types": 0.9802,
+   "valid_rate": 1.0,
+   "latency_median_s": 37.2,
+   "latency_p90_s": 121.0,
+   "mean_s": 62.2,
+   "pdfs_per_hour": 57.8,
+   "per_layout": {
+    "real/portal": 1.0,
+    "synthetic/list": 0.6667,
+    "synthetic/prose": 1.0,
+    "synthetic/table-reordered": 0.6004
+   },
+   "partial": false,
+   "tested_at": "2026-10-02T11:09:46+00:00"
+  },
+  {
+   "label": "gemma3:4b",
+   "model": "gemma3:4b",
+   "digest": "a2af6cc3eb7fa8be8504abaf9b04e88f17a119ec3f04a3addf55f92841195f5a",
+   "stage": "triage",
+   "eligible": false,
+   "cases": 12,
+   "coverage": 1.0,
+   "f1": 0.9664,
+   "f1_ci95": [
+    0.9423,
+    0.9899
+   ],
+   "em": 0.9664,
+   "ls": 0.9956,
+   "types": 1.0,
+   "valid_rate": 1.0,
+   "latency_median_s": 53.9,
+   "latency_p90_s": 127.6,
+   "mean_s": 68.8,
+   "pdfs_per_hour": 52.3,
+   "per_layout": {
+    "real/portal": 1.0,
+    "synthetic/list": 0.9594,
+    "synthetic/prose": 0.9722,
+    "synthetic/table-reordered": 0.9338
+   },
+   "partial": false,
+   "tested_at": "2026-10-02T11:11:07+00:00"
+  },
+  {
+   "label": "gemma3:12b",
+   "model": "gemma3:12b",
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "stage": "confirm",
+   "eligible": true,
+   "cases": 30,
+   "coverage": 1.0,
+   "f1": 0.9532,
+   "f1_ci95": [
+    0.8782,
+    0.9987
+   ],
+   "em": 0.9532,
+   "ls": 0.971,
+   "types": 0.9975,
+   "valid_rate": 1.0,
+   "latency_median_s": 277.4,
+   "latency_p90_s": 670.3,
+   "mean_s": 387.5,
+   "pdfs_per_hour": 9.3,
+   "per_layout": {
+    "real/portal": 1.0,
+    "synthetic/list": 1.0,
+    "synthetic/prose": 1.0,
+    "synthetic/table-reordered": 0.766
+   },
+   "partial": false,
+   "tested_at": "2026-10-02T13:50:05+00:00"
+  },
+  {
+   "label": "granite4:3b",
+   "model": "granite4:3b",
+   "digest": "89962fcc75239ac434cdebceb6b7e0669397f92eaef9c487774b718bc36a3e5f",
+   "stage": "triage",
+   "eligible": false,
+   "cases": 12,
+   "coverage": 1.0,
+   "f1": 0.84,
+   "f1_ci95": [
+    0.6684,
+    0.9672
+   ],
+   "em": 0.7956,
+   "ls": 0.9328,
+   "types": 0.9456,
+   "valid_rate": 1.0,
+   "latency_median_s": 63.1,
+   "latency_p90_s": 229.5,
+   "mean_s": 113.2,
+   "pdfs_per_hour": 31.8,
+   "per_layout": {
+    "real/portal": 0.9153,
+    "synthetic/list": 0.6667,
+    "synthetic/prose": 1.0,
+    "synthetic/table-reordered": 0.7782
+   },
+   "partial": false,
+   "tested_at": "2026-10-02T11:19:50+00:00"
+  },
+  {
+   "label": "llama3.1:8b",
+   "model": "llama3.1:8b",
+   "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+   "stage": "confirm",
+   "eligible": true,
+   "cases": 30,
+   "coverage": 1.0,
+   "f1": 0.9909,
+   "f1_ci95": [
+    0.979,
+    1.0
+   ],
+   "em": 0.9921,
+   "ls": 0.9983,
+   "types": 0.9983,
+   "valid_rate": 1.0,
+   "latency_median_s": 145.8,
+   "latency_p90_s": 402.8,
+   "mean_s": 218.6,
+   "pdfs_per_hour": 16.5,
+   "per_layout": {
+    "real/portal": 1.0,
+    "synthetic/list": 1.0,
+    "synthetic/prose": 1.0,
+    "synthetic/table-reordered": 0.9544
+   },
+   "partial": false,
+   "tested_at": "2026-10-02T13:18:20+00:00"
+  },
+  {
+   "label": "ministral-3:8b",
+   "model": "ministral-3:8b",
+   "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+   "stage": "confirm",
+   "eligible": true,
+   "cases": 30,
+   "coverage": 1.0,
+   "f1": 0.9891,
+   "f1_ci95": [
+    0.9699,
+    1.0
+   ],
+   "em": 0.9891,
+   "ls": 0.9928,
+   "types": 0.9896,
+   "valid_rate": 1.0,
+   "latency_median_s": 196.3,
+   "latency_p90_s": 479.6,
+   "mean_s": 255.1,
+   "pdfs_per_hour": 14.1,
+   "per_layout": {
+    "real/portal": 1.0,
+    "synthetic/list": 1.0,
+    "synthetic/prose": 1.0,
+    "synthetic/table-reordered": 0.9455
+   },
+   "partial": false,
+   "tested_at": "2026-10-02T13:19:25+00:00"
+  },
+  {
+   "label": "phi4-mini:3.8b",
+   "model": "phi4-mini:3.8b",
+   "digest": "78fad5d182a7c33065e153a5f8ba210754207ba9d91973f57dffa7f487363753",
+   "stage": "triage",
+   "eligible": false,
+   "cases": 12,
+   "coverage": 1.0,
+   "f1": 0.7658,
+   "f1_ci95": [
+    0.5701,
+    0.9252
+   ],
+   "em": 0.7473,
+   "ls": 0.8527,
+   "types": 0.9596,
+   "valid_rate": 1.0,
+   "latency_median_s": 62.9,
+   "latency_p90_s": 196.6,
+   "mean_s": 96.4,
+   "pdfs_per_hour": 37.3,
+   "per_layout": {
+    "real/portal": 0.9689,
+    "synthetic/list": 0.9327,
+    "synthetic/prose": 0.4222,
+    "synthetic/table-reordered": 0.7393
+   },
+   "partial": false,
+   "tested_at": "2026-10-02T11:16:38+00:00"
+  },
+  {
+   "label": "qwen3:1.7b",
+   "model": "qwen3:1.7b",
+   "digest": "8f68893c685c3ddff2aa3fffce2aa60a30bb2da65ca488b61fff134a4d1730e7",
+   "stage": "triage",
+   "eligible": false,
+   "cases": 12,
+   "coverage": 1.0,
+   "f1": 0.9144,
+   "f1_ci95": [
+    0.7988,
+    0.99
+   ],
+   "em": 0.8868,
+   "ls": 0.9519,
+   "types": 0.969,
+   "valid_rate": 1.0,
+   "latency_median_s": 29.8,
+   "latency_p90_s": 106.8,
+   "mean_s": 54.2,
+   "pdfs_per_hour": 66.4,
+   "per_layout": {
+    "real/portal": 1.0,
+    "synthetic/list": 0.9722,
+    "synthetic/prose": 1.0,
+    "synthetic/table-reordered": 0.6855
+   },
+   "partial": false,
+   "tested_at": "2026-10-02T11:21:41+00:00"
+  },
+  {
+   "label": "qwen3:4b-q4_K_M",
+   "model": "qwen3:4b-q4_K_M",
+   "digest": "2bfd38a7daaf4b1037efe517ccb73d1a3bbd4822cf89f1a82be1569050a114e0",
+   "stage": "triage",
+   "eligible": false,
+   "cases": 12,
+   "coverage": 1.0,
+   "f1": 0.9001,
+   "f1_ci95": [
+    0.7265,
+    1.0
+   ],
+   "em": 0.9001,
+   "ls": 0.9333,
+   "types": 0.9881,
+   "valid_rate": 1.0,
+   "latency_median_s": 68.7,
+   "latency_p90_s": 216.8,
+   "mean_s": 110.4,
+   "pdfs_per_hour": 32.6,
+   "per_layout": {
+    "real/portal": 1.0,
+    "synthetic/list": 1.0,
+    "synthetic/prose": 1.0,
+    "synthetic/table-reordered": 0.6004
+   },
+   "partial": false,
+   "tested_at": "2026-10-02T11:36:39+00:00"
+  },
+  {
+   "label": "qwen3.5:0.8b",
+   "model": "qwen3.5:0.8b",
+   "digest": "f3817196d142eaf72ce79dfebe53dcb20bd21da87ce13e138a8f8e10a866b3a4",
+   "stage": "triage",
+   "eligible": false,
+   "cases": 12,
+   "coverage": 1.0,
+   "f1": 0.8193,
+   "f1_ci95": [
+    0.6281,
+    0.9646
+   ],
+   "em": 0.7789,
+   "ls": 0.8653,
+   "types": 0.8802,
+   "valid_rate": 1.0,
+   "latency_median_s": 23.0,
+   "latency_p90_s": 55.8,
+   "mean_s": 37.9,
+   "pdfs_per_hour": 95.1,
+   "per_layout": {
+    "real/portal": 0.5686,
+    "synthetic/list": 0.9937,
+    "synthetic/prose": 1.0,
+    "synthetic/table-reordered": 0.7148
+   },
+   "partial": false,
+   "tested_at": "2026-10-02T11:25:24+00:00"
+  }
+ ],
+ "unavailable": []
+}

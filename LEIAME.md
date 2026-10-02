@@ -23,7 +23,41 @@ resposta são o **código de produção** (`src/pdf_extract.py` do 5ltep-layer1)
 ## Ranking
 
 <!-- LEADERBOARD:START -->
-*Ainda sem resultados: a primeira execução começa quando o gabarito estiver montado.*
+*Atualizado em 2026-10-02 13:50 UTC · 30 casos no gabarito (12 reais, 18 sintéticos) · código de produção em `48f8c47`*
+
+**Recomendação:** llama3.1:8b supera qwen3:8b em +0,065 de F1 dos nomes (IC 95% pareado [-0,003, +0,164]), o que não basta para trocar.
+
+| # | Modelo | Estágio | F1 dos nomes [IC 95%] | EM | LS | Tipos | Válidas | Latência p50 / p90 (s) | PDFs/h | Situação |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | llama3.1:8b | confirm | **0,99** [0,98, 1,00] | 0,99 | 1,00 | 1,00 | 100% | 146 / 403 | 16,5 | elegível |
+| 2 | ministral-3:8b | confirm | **0,99** [0,97, 1,00] | 0,99 | 0,99 | 0,99 | 100% | 196 / 480 | 14,1 | elegível |
+| 3 | gemma3:12b | confirm | **0,95** [0,88, 1,00] | 0,95 | 0,97 | 1,00 | 100% | 277 / 670 | 9,3 | elegível |
+| 4 | qwen3:8b | confirm | **0,93** [0,83, 0,99] | 0,93 | 0,95 | 1,00 | 100% | 228 / 608 | 11,7 | elegível |
+| 5 | gemma3:4b | triage | **0,97** [0,94, 0,99] | 0,97 | 1,00 | 1,00 | 100% | 54 / 128 | 52,3 | só triagem |
+| 6 | qwen3:1.7b | triage | **0,91** [0,80, 0,99] | 0,89 | 0,95 | 0,97 | 100% | 30 / 107 | 66,4 | só triagem |
+| 7 | qwen3:4b-q4_K_M | triage | **0,90** [0,73, 1,00] | 0,90 | 0,93 | 0,99 | 100% | 69 / 217 | 32,6 | só triagem |
+| 8 | granite4:3b | triage | **0,84** [0,67, 0,97] | 0,80 | 0,93 | 0,95 | 100% | 63 / 230 | 31,8 | só triagem |
+| 9 | qwen3.5:0.8b | triage | **0,82** [0,63, 0,96] | 0,78 | 0,87 | 0,88 | 100% | 23 / 56 | 95,1 | só triagem |
+| 10 | qwen3:4b | triage | **0,82** [0,58, 0,99] | 0,82 | 0,89 | 0,98 | 100% | 37 / 121 | 57,8 | só triagem |
+| 11 | phi4-mini:3.8b | triage | **0,77** [0,57, 0,93] | 0,75 | 0,85 | 0,96 | 100% | 63 / 197 | 37,3 | só triagem |
+| – | *etapa determinística (sem modelo, referência)* | | 0,56 | 0,56 | | | | | | |
+
+**F1 médio dos nomes por layout**
+
+| Model | real/portal | synthetic/list | synthetic/prose | synthetic/table-reordered |
+|---|---|---|---|---|
+| llama3.1:8b (confirm) | 1,00 | 1,00 | 1,00 | 0,95 |
+| ministral-3:8b (confirm) | 1,00 | 1,00 | 1,00 | 0,95 |
+| gemma3:12b (confirm) | 1,00 | 1,00 | 1,00 | 0,77 |
+| qwen3:8b (confirm) | 1,00 | 1,00 | 1,00 | 0,63 |
+| gemma3:4b (triage) | 1,00 | 0,96 | 0,97 | 0,93 |
+| qwen3:1.7b (triage) | 1,00 | 0,97 | 1,00 | 0,69 |
+| qwen3:4b-q4_K_M (triage) | 1,00 | 1,00 | 1,00 | 0,60 |
+| granite4:3b (triage) | 0,92 | 0,67 | 1,00 | 0,78 |
+| qwen3.5:0.8b (triage) | 0,57 | 0,99 | 1,00 | 0,71 |
+| qwen3:4b (triage) | 1,00 | 0,67 | 1,00 | 0,60 |
+| phi4-mini:3.8b (triage) | 0,97 | 0,93 | 0,42 | 0,74 |
+| *etapa determinística (sem modelo, referência)* | 1,00 | 0,00 | 0,00 | 0,81 |
 <!-- LEADERBOARD:END -->
 
 ## Por que um benchmark separado

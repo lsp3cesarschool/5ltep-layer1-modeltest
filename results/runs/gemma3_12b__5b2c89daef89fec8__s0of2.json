@@ -1,0 +1,1157 @@
+{
+ "key": "5b2c89daef89fec8",
+ "label": "gemma3:12b",
+ "stage": "confirm",
+ "shard": 0,
+ "shards": 2,
+ "upstream_ref": "48f8c4700303a67360c8be261d43d415c194d610",
+ "gold_hash": "2d26a24c573db32ae6c53b0eb39d3f32de56b18c0b87989d4148970d1627d98f",
+ "cases_total": 15,
+ "cases_done": 15,
+ "stopped": null,
+ "server": {
+  "model": "gemma3:12b",
+  "ollama_version": "0.35.0",
+  "model_digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a"
+ },
+ "production_parameters": {
+  "temperature": 0,
+  "seed": 42,
+  "num_ctx": 16384,
+  "num_predict": 6000,
+  "think": "",
+  "prompt_version": "v1"
+ },
+ "started_at": "2026-10-02T12:06:24+00:00",
+ "ended_at": "2026-10-02T13:50:05+00:00",
+ "answers": [
+  {
+   "case": "real-01",
+   "seconds": 270.0,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "DatGeracaoConjuntoDados",
+     "type": "Data Simples"
+    },
+    {
+     "name": "SigAgente",
+     "type": "Cadeia de caracteres"
+    },
+    {
+     "name": "NumCNPJ",
+     "type": "Cadeia de Caracteres"
+    },
+    {
+     "name": "IdeConjUndConsumidoras",
+     "type": "Cadeia de Caracteres"
+    },
+    {
+     "name": "DscConjUndConsumidoras",
+     "type": "Cadeia de Caracteres"
+    },
+    {
+     "name": "SigIndicador",
+     "type": "Cadeia de Caracteres"
+    },
+    {
+     "name": "AnoIndice",
+     "type": "Cadeia de Caracteres"
+    },
+    {
+     "name": "NumPeriodoIndice",
+     "type": "Numérico"
+    },
+    {
+     "name": "VlrIndiceEnviado",
+     "type": "Numérico"
+    }
+   ]
+  },
+  {
+   "case": "real-03",
+   "seconds": 431.9,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "DatGeracaoConjuntoDados",
+     "type": "Data Simples"
+    },
+    {
+     "name": "DatSubsidio",
+     "type": "Data Simples"
+    },
+    {
+     "name": "NumCNPJDistribuidora",
+     "type": "Cadeia Caracteres"
+    },
+    {
+     "name": "SigAgente",
+     "type": "Cadeia Caracteres"
+    },
+    {
+     "name": "NomAgente",
+     "type": "Cadeia Caracteres"
+    },
+    {
+     "name": "DscTipoMontante",
+     "type": "Cadeia Caracteres"
+    },
+    {
+     "name": "DscTipoSubsidio",
+     "type": "Cadeia Caracteres"
+    },
+    {
+     "name": "VlrSubsidio",
+     "type": "Numérico"
+    },
+    {
+     "name": "DscAtoNormativo",
+     "type": "Cadeia Caracteres"
+    },
+    {
+     "name": "NumAto",
+     "type": "Cadeia Caracteres"
+    },
+    {
+     "name": "DatAssinaturaAto",
+     "type": "Data Simples"
+    },
+    {
+     "name": "DatInicioVigenciaAto",
+     "type": "Data Simples"
+    },
+    {
+     "name": "DatFimVigenciaAto",
+     "type": "Data Simples"
+    },
+    {
+     "name": "DthPublicacaoAto",
+     "type": "Data Hora"
+    }
+   ]
+  },
+  {
+   "case": "real-05",
+   "seconds": 746.7,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "DatGeracaoConjuntoDados",
+     "type": "Data Simples"
+    },
+    {
+     "name": "DatCompetencia",
+     "type": "Data Simples"
+    },
+    {
+     "name": "AnoCompetencia",
+     "type": "Cadeia Caracteres"
+    },
+    {
+     "name": "DscMesAnoCompetencia",
+     "type": "Cadeia Caracteres"
+    },
+    {
+     "name": "NomAgente",
+     "type": "Cadeia Caracteres"
+    },
+    {
+     "name": "SigAgente",
+     "type": "Cadeia Caracteres"
+    },
+    {
+     "name": "NumCPFCNPJ",
+     "type": "Cadeia Caracteres"
+    },
+    {
+     "name": "CodCEG",
+     "type": "Cadeia Caracteres"
+    },
+    {
+     "name": "NomEmpreendimento",
+     "type": "Cadeia Caracteres"
+    },
+    {
+     "name": "IdcUsinaProrrogada",
+     "type": "Cadeia Caracteres"
+    },
+    {
+     "name": "PctEmpresa",
+     "type": "Numérico"
+    },
+    {
+     "name": "VlrGeracaoTotal",
+     "type": "Numérico"
+    },
+    {
+     "name": "VlrGeracaoDistribuida",
+     "type": "Numérico"
+    },
+    {
+     "name": "VlrPrincipal",
+     "type": "Numérico"
+    },
+    {
+     "name": "VlrMultaJuros",
+     "type": "Numérico"
+    },
+    {
+     "name": "VlrTotal",
+     "type": "Numérico"
+    },
+    {
+     "name": "VlrPrincipalDistribuido",
+     "type": "Numérico"
+    },
+    {
+     "name": "VlrMultaJurosDistribuido",
+     "type": "Numérico"
+    },
+    {
+     "name": "VlrTotalDistribuido",
+     "type": "Numérico"
+    },
+    {
+     "name": "VlrTarifa",
+     "type": "Numérico"
+    }
+   ]
+  },
+  {
+   "case": "real-07",
+   "seconds": 730.8,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "DatGeracaoConjuntoDados",
+     "type": "Data Simples"
+    },
+    {
+     "name": "SigUF",
+     "type": "Cadeia Caracteres"
+    },
+    {
+     "name": "CodMunicipioIBGE",
+     "type": "Numérico"
+    },
+    {
+     "name": "NomMunicipio",
+     "type": "Cadeia Caracteres"
+    },
+    {
+     "name": "NomAgente",
+     "type": "Cadeia Caracteres"
+    },
+    {
+     "name": "NumCPFCNPJ",
+     "type": "Cadeia Caracteres"
+    },
+    {
+     "name": "CodCEG",
+     "type": "Cadeia Caracteres"
+    },
+    {
+     "name": "NomEmpreendimento",
+     "type": "Cadeia Caracteres"
+    },
+    {
+     "name": "IdcUsinaPrincipal",
+     "type": "Cadeia Caracteres"
+    },
+    {
+     "name": "NomReservatorio",
+     "type": "Cadeia Caracteres"
+    },
+    {
+     "name": "MdaAreaAlagadaKm",
+     "type": "Numérico"
+    },
+    {
+     "name": "PctAreaAlagadaRsrvtr",
+     "type": "Numérico"
+    },
+    {
+     "name": "PctCasaMaquinas",
+     "type": "Numérico"
+    },
+    {
+     "name": "PctEstacaoElevatoria",
+     "type": "Numérico"
+    },
+    {
+     "name": "PctParticipacao",
+     "type": "Numérico"
+    },
+    {
+     "name": "IdcCasaMaqDissociada",
+     "type": "Cadeia Caracteres"
+    },
+    {
+     "name": "IdcEstacaoElevatoria",
+     "type": "Cadeia Caracteres"
+    }
+   ]
+  },
+  {
+   "case": "real-09",
+   "seconds": 654.7,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "DatGeracaoConjuntoDados",
+     "type": "Data simples"
+    },
+    {
+     "name": "NomEmpreendimento",
+     "type": "Cadeia de caracteres"
+    },
+    {
+     "name": "IdeNucleoCEG",
+     "type": "Cadeia de caracteres"
+    },
+    {
+     "name": "CodCEG",
+     "type": "Cadeia de caracteres"
+    },
+    {
+     "name": "SigUFPrincipal",
+     "type": "Cadeia de caracteres"
+    },
+    {
+     "name": "SigTipoGeracao",
+     "type": "Cadeia de caracteres"
+    },
+    {
+     "name": "DscFaseUsina",
+     "type": "Cadeia de caracteres"
+    },
+    {
+     "name": "DscOrigemCombustivel",
+     "type": "Cadeia de caracteres"
+    },
+    {
+     "name": "DscFonteCombustivel",
+     "type": "Cadeia de caracteres"
+    },
+    {
+     "name": "DscTipoOutorga",
+     "type": "Cadeia de caracteres"
+    },
+    {
+     "name": "NomFonteCombustivel",
+     "type": "Cadeia de caracteres"
+    },
+    {
+     "name": "DatEntradaOperacao",
+     "type": "Data simples"
+    },
+    {
+     "name": "MdaPotenciaOutorgadaKw",
+     "type": "Numérico"
+    },
+    {
+     "name": "MdaPotenciaFiscalizadaKw",
+     "type": "Numérico"
+    },
+    {
+     "name": "MdaGarantiaFisicaKw",
+     "type": "Numérico"
+    },
+    {
+     "name": "IdcGeracaoQualificada",
+     "type": "Cadeia de caracteres"
+    },
+    {
+     "name": "NumCoordNEmpreendimento",
+     "type": "Numérico"
+    },
+    {
+     "name": "NumCoordEEmpreendimento",
+     "type": "Numérico"
+    },
+    {
+     "name": "DatInicioVigencia",
+     "type": "Data simples"
+    },
+    {
+     "name": "DatFimVigencia",
+     "type": "Data simples"
+    },
+    {
+     "name": "DscPropriRegimePariticipacao",
+     "type": "Cadeia de caracteres"
+    },
+    {
+     "name": "DscSubBacia",
+     "type": "Cadeia de caracteres"
+    },
+    {
+     "name": "DscMuninicpios",
+     "type": "Cadeia de caracteres"
+    }
+   ]
+  },
+  {
+   "case": "real-11",
+   "seconds": 170.7,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "DatGeracaoConjuntoDados",
+     "type": "Data Simples"
+    },
+    {
+     "name": "MesReferencia",
+     "type": "Cadeia de caracteres"
+    },
+    {
+     "name": "AnoReferencia",
+     "type": "Cadeia de caracteres"
+    },
+    {
+     "name": "MdaPotenciaMW",
+     "type": "Numérico"
+    },
+    {
+     "name": "MdaAcrescimoPotenciaMW",
+     "type": "Numérico"
+    }
+   ]
+  },
+  {
+   "case": "syn-01-prose",
+   "seconds": 185.2,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "SEQ_TAD",
+     "type": "int"
+    },
+    {
+     "name": "NUM_TAD",
+     "type": "varchar"
+    },
+    {
+     "name": "SER_TAD",
+     "type": "int"
+    },
+    {
+     "name": "COD_SUBSTITUICAO",
+     "type": "int"
+    },
+    {
+     "name": "ADMINISTRATIVO",
+     "type": "char"
+    },
+    {
+     "name": "NORMA_TIPO",
+     "type": "varchar"
+    },
+    {
+     "name": "NORMA_NUMERO",
+     "type": "int"
+    },
+    {
+     "name": "ARTIGO",
+     "type": "int"
+    },
+    {
+     "name": "NU_PARAGRAFO",
+     "type": "int"
+    },
+    {
+     "name": "NU_INCISO",
+     "type": "int"
+    },
+    {
+     "name": "CD_ALINEA",
+     "type": "varchar"
+    },
+    {
+     "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+     "type": "timestamp"
+    }
+   ]
+  },
+  {
+   "case": "syn-01-table-reordered",
+   "seconds": 170.2,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "SEQ_TAD",
+     "type": "int"
+    },
+    {
+     "name": "NUM_TAD",
+     "type": "varchar"
+    },
+    {
+     "name": "SER_TAD",
+     "type": "int"
+    },
+    {
+     "name": "COD_SUBSTITUICAO",
+     "type": "int"
+    },
+    {
+     "name": "ADMINISTRATIVO",
+     "type": "char"
+    },
+    {
+     "name": "NORMA_TIPO",
+     "type": "varchar"
+    },
+    {
+     "name": "NORMA_NUMERO",
+     "type": "int"
+    },
+    {
+     "name": "ARTIGO",
+     "type": "int"
+    },
+    {
+     "name": "NU_PARAGRAFO",
+     "type": "int"
+    },
+    {
+     "name": "NU_INCISO",
+     "type": "int"
+    },
+    {
+     "name": "CD_ALINEA",
+     "type": "varchar"
+    },
+    {
+     "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+     "type": "timestamp"
+    }
+   ]
+  },
+  {
+   "case": "syn-02-list",
+   "seconds": 151.2,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "polo",
+     "type": "Char"
+    },
+    {
+     "name": "rpa",
+     "type": "Num"
+    },
+    {
+     "name": "logradouro",
+     "type": "Char"
+    },
+    {
+     "name": "bairro",
+     "type": "Char"
+    },
+    {
+     "name": "observacao",
+     "type": "Char"
+    },
+    {
+     "name": "datainauguracao",
+     "type": "DATE"
+    },
+    {
+     "name": "latitude",
+     "type": "Num"
+    },
+    {
+     "name": "longitude",
+     "type": "Num"
+    }
+   ]
+  },
+  {
+   "case": "syn-03-prose",
+   "seconds": 592.2,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "SEQ_TAD",
+     "type": "numero"
+    },
+    {
+     "name": "NUM_TAD",
+     "type": "string"
+    },
+    {
+     "name": "SER_TAD",
+     "type": "string"
+    },
+    {
+     "name": "COD_SUBSTITUICAO",
+     "type": "string"
+    },
+    {
+     "name": "SEQ_BEM_APREENDIDO",
+     "type": "numero"
+    },
+    {
+     "name": "CD_BEM",
+     "type": "string"
+    },
+    {
+     "name": "QTD_BEM_APREENDIDO",
+     "type": "numero"
+    },
+    {
+     "name": "DES_UNIDADE_MEDIDA",
+     "type": "string"
+    },
+    {
+     "name": "DES_TIPO_BEM",
+     "type": "string"
+    },
+    {
+     "name": "DES_TIPO_INFRACAO",
+     "type": "string"
+    },
+    {
+     "name": "DES_BEM_APREENDIDO",
+     "type": "string"
+    },
+    {
+     "name": "TIPO_VEICULO",
+     "type": "string"
+    },
+    {
+     "name": "DES_MARCA",
+     "type": "string"
+    },
+    {
+     "name": "DES_MARCA_MODELO",
+     "type": "string"
+    },
+    {
+     "name": "DES_PLACA_VEICULO",
+     "type": "string"
+    },
+    {
+     "name": "DES_COR",
+     "type": "string"
+    },
+    {
+     "name": "CHASSI_NUM_MOTOR",
+     "type": "string"
+    },
+    {
+     "name": "DES_ANO_VEICULO",
+     "type": "numero"
+    },
+    {
+     "name": "NU_ANO_MOD",
+     "type": "numero"
+    },
+    {
+     "name": "DES_LACRE_VEICULO",
+     "type": "string"
+    },
+    {
+     "name": "NUM_INSCRICAO_MARINHA",
+     "type": "string"
+    },
+    {
+     "name": "NOME_MATRICULA",
+     "type": "string"
+    },
+    {
+     "name": "LICENCA_NUMERO_SERIE",
+     "type": "string"
+    },
+    {
+     "name": "DES_FABRICANTE",
+     "type": "string"
+    },
+    {
+     "name": "NU_VALOR",
+     "type": "string"
+    },
+    {
+     "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+     "type": "string"
+    }
+   ]
+  },
+  {
+   "case": "syn-03-table-reordered",
+   "seconds": 553.5,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "SEQ_TAD",
+     "type": "numero"
+    },
+    {
+     "name": "NUM_TAD",
+     "type": "string"
+    },
+    {
+     "name": "SER_TAD",
+     "type": "string"
+    },
+    {
+     "name": "COD_SUBSTITUICAO",
+     "type": "string"
+    },
+    {
+     "name": "SEQ_BEM_APREENDIDO",
+     "type": "numero"
+    },
+    {
+     "name": "CD_BEM",
+     "type": "string"
+    },
+    {
+     "name": "QTD_BEM_APREENDIDO",
+     "type": "numero"
+    },
+    {
+     "name": "DES_UNIDADE_MEDIDA",
+     "type": "string"
+    },
+    {
+     "name": "DES_TIPO_BEM",
+     "type": "string"
+    },
+    {
+     "name": "DES_TIPO_INFRACAO",
+     "type": "string"
+    },
+    {
+     "name": "DES_BEM_APREENDIDO",
+     "type": "string"
+    },
+    {
+     "name": "TIPO_VEICULO",
+     "type": "string"
+    },
+    {
+     "name": "DES_MARCA",
+     "type": "string"
+    },
+    {
+     "name": "DES_MARCA_MODELO",
+     "type": "string"
+    },
+    {
+     "name": "DES_PLACA_VEICULO",
+     "type": "string"
+    },
+    {
+     "name": "DES_COR",
+     "type": "string"
+    },
+    {
+     "name": "CHASSI_NUM_MOTOR",
+     "type": "string"
+    },
+    {
+     "name": "DES_ANO_VEICULO",
+     "type": "numero"
+    },
+    {
+     "name": "NU_ANO_MOD",
+     "type": "numero"
+    },
+    {
+     "name": "DES_LACRE_VEICULO",
+     "type": "string"
+    },
+    {
+     "name": "NUM_INSCRICAO_MARIN",
+     "type": "string"
+    },
+    {
+     "name": "NOME_MATRICULA",
+     "type": "string"
+    },
+    {
+     "name": "LICENCA_NUMERO_SERI",
+     "type": "string"
+    },
+    {
+     "name": "DES_FABRICANTE",
+     "type": "string"
+    },
+    {
+     "name": "NU_VALOR",
+     "type": "string"
+    },
+    {
+     "name": "ULTIMA_ATUALIZACAO_R",
+     "type": "string"
+    }
+   ]
+  },
+  {
+   "case": "syn-04-list",
+   "seconds": 284.8,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "nome_oficial",
+     "type": "Char"
+    },
+    {
+     "name": "rpa",
+     "type": "Num"
+    },
+    {
+     "name": "distrito_sanitario",
+     "type": "Num"
+    },
+    {
+     "name": "micro_regiao",
+     "type": "char"
+    },
+    {
+     "name": "cnes",
+     "type": "Num"
+    },
+    {
+     "name": "cod_nat",
+     "type": "Char"
+    },
+    {
+     "name": "tipo_servico",
+     "type": "Char"
+    },
+    {
+     "name": "endereco",
+     "type": "Char"
+    },
+    {
+     "name": "bairro",
+     "type": "Char"
+    },
+    {
+     "name": "fone",
+     "type": "Char"
+    },
+    {
+     "name": "servico",
+     "type": "Char"
+    },
+    {
+     "name": "especialidade",
+     "type": "Char"
+    },
+    {
+     "name": "como_usar",
+     "type": "Char"
+    },
+    {
+     "name": "horario",
+     "type": "Char"
+    },
+    {
+     "name": "ordem",
+     "type": "char"
+    },
+    {
+     "name": "latitude",
+     "type": "Num"
+    },
+    {
+     "name": "longitude",
+     "type": "Num"
+    }
+   ]
+  },
+  {
+   "case": "syn-05-prose",
+   "seconds": 575.4,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "SEQ_DOACAO",
+     "type": "INTEGER"
+    },
+    {
+     "name": "NUM_DOACAO",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "SER_DOACAO",
+     "type": "CHAR"
+    },
+    {
+     "name": "COD_SUBSTITUICAO",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "SEQ_DOACAO_BEM",
+     "type": "INTEGER"
+    },
+    {
+     "name": "DES_BEM_APREENDIDO",
+     "type": "TEXT"
+    },
+    {
+     "name": "DES_TIPO_BEM",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "DES_TIPO_INFRACAO",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "QTD_DOACAO_BEM",
+     "type": "DECIMAL"
+    },
+    {
+     "name": "DES_UNIDADE_MEDIDA",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "NU_VALOR",
+     "type": "DECIMAL"
+    },
+    {
+     "name": "OBS_DOACAO_BEM",
+     "type": "TEXT"
+    },
+    {
+     "name": "TIPO_VEICULO",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "DES_MARCA",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "DES_MODELO",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "DES_PLACA_VEICULO",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "DES_COR",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "CHASSI_NUM_MOTOR",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "DES_ANO_VEICULO",
+     "type": "INTEGER"
+    },
+    {
+     "name": "NU_ANO_MOD",
+     "type": "INTEGER"
+    },
+    {
+     "name": "DES_LACRE_VEICULO",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "NUM_INSCRICAO_MARINHA",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "NOME_MATRICULA",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "LICENCA_NUMERO_SERIE",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "DES_FABRICANTE",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+     "type": "datatime"
+    }
+   ]
+  },
+  {
+   "case": "syn-05-table-reordered",
+   "seconds": 529.8,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "SEQ_DOACAO",
+     "type": "INTEGER"
+    },
+    {
+     "name": "NUM_DOACAO",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "SER_DOACAO",
+     "type": "CHAR"
+    },
+    {
+     "name": "COD_SUBSTITUICAO",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "SEQ_DOACAO_BEM",
+     "type": "INTEGER"
+    },
+    {
+     "name": "DES_BEM_APREENDIDO",
+     "type": "TEXT"
+    },
+    {
+     "name": "DES_TIPO_BEM",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "DES_TIPO_INFRACAO",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "QTD_DOACAO_BEM",
+     "type": "DECIMAL"
+    },
+    {
+     "name": "DES_UNIDADE_MEDIDA",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "NU_VALOR",
+     "type": "DECIMAL"
+    },
+    {
+     "name": "OBS_DOACAO_BEM",
+     "type": "TEXT"
+    },
+    {
+     "name": "TIPO_VEICULO",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "DES_MARCA",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "DES_MODELO",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "DES_PLACA_VEICULO",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "DES_COR",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "CHASSI_NUM_MOTOR",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "DES_ANO_VEICULO",
+     "type": "INTEGER"
+    },
+    {
+     "name": "NU_ANO_MOD",
+     "type": "INTEGER"
+    },
+    {
+     "name": "DES_LACRE_VEICULO",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "NUM_INSCRICAO_MARINHA",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "NOME_MATRICULA",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "LICENCA_NUMERO_SERIE",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "DES_FABRICANTE",
+     "type": "VARCHAR"
+    },
+    {
+     "name": "ULTIMA_ATUALIZACAO_RECURSO",
+     "type": "DATETIME"
+    }
+   ]
+  },
+  {
+   "case": "syn-06-list",
+   "seconds": 173.9,
+   "error": null,
+   "truncated": false,
+   "fields": [
+    {
+     "name": "data_abertura",
+     "type": "Date"
+    },
+    {
+     "name": "hora_abertura",
+     "type": "Char"
+    },
+    {
+     "name": "bairro",
+     "type": "Char"
+    },
+    {
+     "name": "endereco",
+     "type": "Char"
+    },
+    {
+     "name": "complemento",
+     "type": "Char"
+    },
+    {
+     "name": "tipo_ocorrencia",
+     "type": "Char"
+    },
+    {
+     "name": "quantidade_vitimas",
+     "type": "Num"
+    },
+    {
+     "name": "descricao",
+     "type": "Char"
+    },
+    {
+     "name": "tipo",
+     "type": "Char"
+    },
+    {
+     "name": "latitude",
+     "type": "Num"
+    },
+    {
+     "name": "longitude",
+     "type": "Num"
+    }
+   ]
+  }
+ ]
+}

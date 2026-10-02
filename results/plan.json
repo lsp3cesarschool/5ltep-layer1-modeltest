@@ -1,0 +1,207 @@
+{
+ "gold_hash": "2d26a24c573db32ae6c53b0eb39d3f32de56b18c0b87989d4148970d1627d98f",
+ "gold_cases": 30,
+ "triage_cases": [
+  "real-01",
+  "syn-01-list",
+  "syn-01-prose",
+  "syn-01-table-reordered",
+  "real-02",
+  "syn-02-list",
+  "syn-02-prose",
+  "syn-02-table-reordered",
+  "real-03",
+  "syn-03-list",
+  "syn-03-prose",
+  "syn-03-table-reordered"
+ ],
+ "prompt": {
+  "commit": "48f8c4700303a67360c8be261d43d415c194d610",
+  "fingerprint": "fa25919df6a80c027bcbc45c398dea8db5dabbace80dc1e028cde5e1dd8eee18"
+ },
+ "production": {
+  "backend": "ollama",
+  "model": "qwen3:8b",
+  "options": {
+   "think": false
+  },
+  "since": "2026-10-01",
+  "previous": null
+ },
+ "selection": {
+  "triage_cases": 12,
+  "finalists": 3,
+  "confirm_shards": 2,
+  "min_valid_rate": 0.9,
+  "min_coverage": 0.9,
+  "max_call_seconds": 1800,
+  "monthly_budget_hours": 40,
+  "expected_pdfs_per_month": 150,
+  "switch_margin_f1": 0.03,
+  "bootstrap_resamples": 2000,
+  "min_age_days_to_adopt": 30,
+  "budget_minutes": 300
+ },
+ "entries": [
+  {
+   "label": "qwen3:8b",
+   "backend": "ollama",
+   "model": "qwen3:8b",
+   "options": {
+    "think": false
+   },
+   "experiment": false,
+   "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+   "first_seen": "2026-10-02T10:56:20+00:00",
+   "slug": "qwen3_8b",
+   "triage_key": "a9af609d33a252f5",
+   "confirm_key": "6782891211a7412a"
+  },
+  {
+   "label": "qwen3:4b",
+   "backend": "ollama",
+   "model": "qwen3:4b",
+   "options": {
+    "think": false
+   },
+   "experiment": false,
+   "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+   "first_seen": "2026-10-02T10:56:20+00:00",
+   "slug": "qwen3_4b",
+   "triage_key": "71a3520642e9cfc4",
+   "confirm_key": "ec67dc7b233fec33"
+  },
+  {
+   "label": "gemma3:4b",
+   "backend": "ollama",
+   "model": "gemma3:4b",
+   "options": {},
+   "experiment": false,
+   "digest": "a2af6cc3eb7fa8be8504abaf9b04e88f17a119ec3f04a3addf55f92841195f5a",
+   "first_seen": "2026-10-02T10:56:20+00:00",
+   "slug": "gemma3_4b",
+   "triage_key": "d753d9bf900159c1",
+   "confirm_key": "80726dd833ad98ef"
+  },
+  {
+   "label": "gemma3:12b",
+   "backend": "ollama",
+   "model": "gemma3:12b",
+   "options": {},
+   "experiment": false,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "first_seen": "2026-10-02T10:56:20+00:00",
+   "slug": "gemma3_12b",
+   "triage_key": "e74a05fbc80ba1c1",
+   "confirm_key": "5b2c89daef89fec8"
+  },
+  {
+   "label": "granite4:3b",
+   "backend": "ollama",
+   "model": "granite4:3b",
+   "options": {},
+   "experiment": false,
+   "digest": "89962fcc75239ac434cdebceb6b7e0669397f92eaef9c487774b718bc36a3e5f",
+   "first_seen": "2026-10-02T10:56:20+00:00",
+   "slug": "granite4_3b",
+   "triage_key": "39d33fd90b49e60d",
+   "confirm_key": "38dc527df5196cfb"
+  },
+  {
+   "label": "llama3.1:8b",
+   "backend": "ollama",
+   "model": "llama3.1:8b",
+   "options": {},
+   "experiment": false,
+   "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+   "first_seen": "2026-10-02T10:56:20+00:00",
+   "slug": "llama3.1_8b",
+   "triage_key": "c86eed719f5b8535",
+   "confirm_key": "7dfa2884af855572"
+  },
+  {
+   "label": "ministral-3:8b",
+   "backend": "ollama",
+   "model": "ministral-3:8b",
+   "options": {},
+   "experiment": false,
+   "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+   "first_seen": "2026-10-02T10:56:20+00:00",
+   "slug": "ministral-3_8b",
+   "triage_key": "4c2c49ca67f6c10f",
+   "confirm_key": "d6ba7e49aedca737"
+  },
+  {
+   "label": "phi4-mini:3.8b",
+   "backend": "ollama",
+   "model": "phi4-mini:3.8b",
+   "options": {},
+   "experiment": false,
+   "digest": "78fad5d182a7c33065e153a5f8ba210754207ba9d91973f57dffa7f487363753",
+   "first_seen": "2026-10-02T10:56:20+00:00",
+   "slug": "phi4-mini_3.8b",
+   "triage_key": "054ece5192fcc94a",
+   "confirm_key": "82d678614bc937c4"
+  },
+  {
+   "label": "qwen3:1.7b",
+   "backend": "ollama",
+   "model": "qwen3:1.7b",
+   "size_gb": 1.36,
+   "digest": "8f68893c685c3ddff2aa3fffce2aa60a30bb2da65ca488b61fff134a4d1730e7",
+   "source": "discovered",
+   "discovered_at": "2026-10-02T10:56:17+00:00",
+   "options": {
+    "think": false
+   },
+   "experiment": false,
+   "first_seen": "2026-10-02T10:56:20+00:00",
+   "slug": "qwen3_1.7b",
+   "triage_key": "15bf90c5134b6a3f",
+   "confirm_key": "4676b97e7fe85e5f"
+  },
+  {
+   "label": "qwen3:4b-q4_K_M",
+   "backend": "ollama",
+   "model": "qwen3:4b-q4_K_M",
+   "size_gb": 2.62,
+   "digest": "2bfd38a7daaf4b1037efe517ccb73d1a3bbd4822cf89f1a82be1569050a114e0",
+   "source": "discovered",
+   "discovered_at": "2026-10-02T10:56:19+00:00",
+   "options": {
+    "think": false
+   },
+   "experiment": false,
+   "first_seen": "2026-10-02T10:56:20+00:00",
+   "slug": "qwen3_4b-q4_K_M",
+   "triage_key": "63df9b97126f4d4e",
+   "confirm_key": "87948eb73aa6b92a"
+  },
+  {
+   "label": "qwen3.5:0.8b",
+   "backend": "ollama",
+   "model": "qwen3.5:0.8b",
+   "size_gb": 1.04,
+   "digest": "f3817196d142eaf72ce79dfebe53dcb20bd21da87ce13e138a8f8e10a866b3a4",
+   "source": "discovered",
+   "discovered_at": "2026-10-02T10:56:20+00:00",
+   "options": {
+    "think": false
+   },
+   "experiment": false,
+   "first_seen": "2026-10-02T10:56:20+00:00",
+   "slug": "qwen3.5_0.8b",
+   "triage_key": "4905e5bcfb6db806",
+   "confirm_key": "ca7ee45ffcf2d357"
+  }
+ ],
+ "unavailable": [],
+ "forced": false,
+ "only": [],
+ "finalists": [
+  "llama3.1:8b",
+  "ministral-3:8b",
+  "gemma3:12b",
+  "qwen3:8b"
+ ]
+}
