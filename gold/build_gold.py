@@ -25,7 +25,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from bench import http  # noqa: E402
+from bench import net  # noqa: E402
 from bench.common import GOLD_DIR, GOLD_FILE  # noqa: E402
 from gold.layouts import LAYOUTS, render  # noqa: E402
 
@@ -34,12 +34,12 @@ MIN_FIELDS, MAX_FIELDS = 3, 40
 
 
 def head_commit(repo: str) -> str | None:
-    r = http.get(f"https://api.github.com/repos/{repo}/commits/main", read_timeout=30)
+    r = net.get(f"https://api.github.com/repos/{repo}/commits/main", read_timeout=30)
     return r.json().get("sha") if r.status_code == 200 else None
 
 
 def raw(repo: str, sha: str, path: str):
-    r = http.get(f"https://raw.githubusercontent.com/{repo}/{sha}/{path}", read_timeout=60)
+    r = net.get(f"https://raw.githubusercontent.com/{repo}/{sha}/{path}", read_timeout=60)
     return r.json() if r.status_code == 200 else None
 
 
@@ -108,7 +108,7 @@ def main(argv=None) -> None:
     cases, sources = [], []
 
     for i, c in enumerate(round_robin([real_candidates(r, s) for r, s in commits.items()], args.real), 1):
-        resp = http.get(c["dictionary"]["url"], read_timeout=120)
+        resp = net.get(c["dictionary"]["url"], read_timeout=120)
         if resp.status_code != 200 or hashlib.sha256(resp.content).hexdigest() != c["sha256"]:
             print(f"skipped {c['dataset']}: the PDF changed since the instance extracted it")
             continue

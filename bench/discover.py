@@ -20,7 +20,7 @@ from pathlib import Path
 import requests
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from bench import http  # noqa: E402
+from bench import net  # noqa: E402
 from bench.common import CANDIDATES_FILE, DISCOVERED_FILE  # noqa: E402
 
 SIZE_TAG = re.compile(r"^(e?\d+(\.\d+)?[bm])(-a\d+(\.\d+)?b)?(-h)?(-q4_k_m)?$|^latest$", re.I)
@@ -28,21 +28,21 @@ MANIFEST_ACCEPT = {"Accept": "application/vnd.docker.distribution.manifest.v2+js
 
 
 def library_tags(name: str) -> list[str]:
-    resp = http.get(f"https://ollama.com/library/{name}/tags", read_timeout=30)
+    resp = net.get(f"https://ollama.com/library/{name}/tags", read_timeout=30)
     if resp.status_code != 200:
         return []
     return sorted(set(re.findall(rf'href="/library/{re.escape(name)}:([^"]+)"', resp.text)))
 
 
 def newest_models() -> list[str]:
-    resp = http.get("https://ollama.com/search?o=newest", read_timeout=30)
+    resp = net.get("https://ollama.com/search?o=newest", read_timeout=30)
     resp.raise_for_status()
     return list(dict.fromkeys(re.findall(r'href="/library/([a-z0-9._-]+)"', resp.text)))
 
 
 def manifest(model: str, tag: str) -> tuple[str, float] | None:
     """(digest, size in GB) from the registry; the digest matches what `ollama list` shows."""
-    r = http.get(f"https://registry.ollama.ai/v2/library/{model}/manifests/{tag}",
+    r = net.get(f"https://registry.ollama.ai/v2/library/{model}/manifests/{tag}",
                  headers=MANIFEST_ACCEPT, read_timeout=30)
     if r.status_code != 200:
         return None
