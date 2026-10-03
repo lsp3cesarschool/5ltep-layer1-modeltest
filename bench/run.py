@@ -77,7 +77,7 @@ def main(argv=None) -> None:
         except Exception as exc:      # a timeout or a server error is a failed answer, not a crash
             fields, meta, error = [], {}, f"{type(exc).__name__}: {str(exc)[:300]}"
         answers.append({"case": case["id"], "seconds": round(time.monotonic() - t0, 1), "error": error,
-                        "truncated": meta.get("truncated"),
+                        "pieces": meta.get("pieces"),
                         "fields": [{"name": f["name"], "type": f.get("type", "")} for f in fields]})
         print(f"{case['id']:40s} {len(fields):3d} fields  {answers[-1]['seconds']:7.1f} s  {error or ''}", flush=True)
         save(final=False)
