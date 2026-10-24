@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-10-02T13:50:52+00:00",
+ "generated_at": "2026-10-24T11:18:48+00:00",
  "benchmark": "https://github.com/lsp3cesarschool/5ltep-layer1-modeltest",
  "task": "PDF data dictionary -> field list",
  "gold_cases": 30,
  "gold_hash": "2d26a24c573db32ae6c53b0eb39d3f32de56b18c0b87989d4148970d1627d98f",
- "prompt_commit": "48f8c4700303a67360c8be261d43d415c194d610",
+ "prompt_commit": "22661431a20d7cfa345fe7378e82849d26c8d551",
  "use": {
   "label": "qwen3:8b",
   "backend": "ollama",
@@ -13,17 +13,17 @@
   "options": {
    "think": false
   },
-  "name_f1": 0.9261,
+  "name_f1": 0.9316,
   "name_f1_ci95": [
-   0.8296,
+   0.8423,
    0.9947
   ],
-  "em": 0.9261,
+  "em": 0.932,
   "types": 1.0,
   "valid_rate": 1.0,
-  "latency_p90_s": 608.2,
-  "pdfs_per_hour": 11.7,
-  "tested_at": "2026-10-02T13:35:01+00:00"
+  "latency_p90_s": 396.5,
+  "pdfs_per_hour": 18.1,
+  "tested_at": "2026-10-24T10:52:17+00:00"
  },
  "production": {
   "label": "qwen3:8b",
@@ -33,17 +33,17 @@
   "options": {
    "think": false
   },
-  "name_f1": 0.9261,
+  "name_f1": 0.9316,
   "name_f1_ci95": [
-   0.8296,
+   0.8423,
    0.9947
   ],
-  "em": 0.9261,
+  "em": 0.932,
   "types": 1.0,
   "valid_rate": 1.0,
-  "latency_p90_s": 608.2,
-  "pdfs_per_hour": 11.7,
-  "tested_at": "2026-10-02T13:35:01+00:00"
+  "latency_p90_s": 396.5,
+  "pdfs_per_hour": 18.1,
+  "tested_at": "2026-10-24T10:52:17+00:00"
  },
  "recommended": {
   "label": "llama3.1:8b",
@@ -51,26 +51,26 @@
   "model": "llama3.1:8b",
   "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
   "options": {},
-  "name_f1": 0.9909,
+  "name_f1": 0.9904,
   "name_f1_ci95": [
-   0.979,
-   1.0
+   0.9783,
+   0.9996
   ],
-  "em": 0.9921,
-  "types": 0.9983,
+  "em": 0.9912,
+  "types": 0.9991,
   "valid_rate": 1.0,
-  "latency_p90_s": 402.8,
-  "pdfs_per_hour": 16.5,
-  "tested_at": "2026-10-02T13:18:20+00:00"
+  "latency_p90_s": 511.0,
+  "pdfs_per_hour": 14.4,
+  "tested_at": "2026-10-24T11:07:06+00:00"
  },
  "switch_recommended": false,
  "comparison": {
-  "diff": 0.0648,
+  "diff": 0.0589,
   "ci95": [
-   -0.0025,
-   0.1641
+   -0.0029,
+   0.154
   ],
   "cases": 30
  },
- "reason": "llama3.1:8b beats qwen3:8b by +0.065 name-F1 (paired 95% CI [-0.003, +0.164]), which is not enough to switch"
+ "reason": "llama3.1:8b beats qwen3:8b by +0.059 name-F1 (paired 95% CI [-0.003, +0.154]), which is not enough to switch"
 }

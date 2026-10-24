@@ -16,8 +16,8 @@
   "syn-03-table-reordered"
  ],
  "prompt": {
-  "commit": "48f8c4700303a67360c8be261d43d415c194d610",
-  "fingerprint": "fa25919df6a80c027bcbc45c398dea8db5dabbace80dc1e028cde5e1dd8eee18"
+  "commit": "22661431a20d7cfa345fe7378e82849d26c8d551",
+  "fingerprint": "efb530f4eb80783eb24a4d9a1cf64e99c1405fbf322656f896771f61a78cd282"
  },
  "production": {
   "backend": "ollama",
@@ -54,8 +54,8 @@
    "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
    "first_seen": "2026-10-02T10:56:20+00:00",
    "slug": "qwen3_8b",
-   "triage_key": "a9af609d33a252f5",
-   "confirm_key": "6782891211a7412a"
+   "triage_key": "168e288ea7a15674",
+   "confirm_key": "ff152c23f0bbec2d"
   },
   {
    "label": "qwen3:4b",
@@ -68,8 +68,8 @@
    "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
    "first_seen": "2026-10-02T10:56:20+00:00",
    "slug": "qwen3_4b",
-   "triage_key": "71a3520642e9cfc4",
-   "confirm_key": "ec67dc7b233fec33"
+   "triage_key": "9c0cc8fc3e16a613",
+   "confirm_key": "f871a1b26c8a247c"
   },
   {
    "label": "gemma3:4b",
@@ -77,11 +77,11 @@
    "model": "gemma3:4b",
    "options": {},
    "experiment": false,
-   "digest": "a2af6cc3eb7fa8be8504abaf9b04e88f17a119ec3f04a3addf55f92841195f5a",
-   "first_seen": "2026-10-02T10:56:20+00:00",
+   "digest": "68ceab7e468a31c988b44d5a4984a0e21f58c4f7158c6ce29c1804babac38df7",
+   "first_seen": "2026-10-24T08:43:47+00:00",
    "slug": "gemma3_4b",
-   "triage_key": "d753d9bf900159c1",
-   "confirm_key": "80726dd833ad98ef"
+   "triage_key": "3c23f7ffd63ec7b4",
+   "confirm_key": "ac15d43d9f68101a"
   },
   {
    "label": "gemma3:12b",
@@ -89,11 +89,11 @@
    "model": "gemma3:12b",
    "options": {},
    "experiment": false,
-   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
-   "first_seen": "2026-10-02T10:56:20+00:00",
+   "digest": "b92b218582c521ba287f38f1d6057dcd3c6cbff036f13cac97b5d861f5e58ec3",
+   "first_seen": "2026-10-24T08:43:47+00:00",
    "slug": "gemma3_12b",
-   "triage_key": "e74a05fbc80ba1c1",
-   "confirm_key": "5b2c89daef89fec8"
+   "triage_key": "c1f65b018cd182a2",
+   "confirm_key": "7db39ed8be5e0f4f"
   },
   {
    "label": "granite4:3b",
@@ -104,8 +104,8 @@
    "digest": "89962fcc75239ac434cdebceb6b7e0669397f92eaef9c487774b718bc36a3e5f",
    "first_seen": "2026-10-02T10:56:20+00:00",
    "slug": "granite4_3b",
-   "triage_key": "39d33fd90b49e60d",
-   "confirm_key": "38dc527df5196cfb"
+   "triage_key": "d34b0d489dac7a16",
+   "confirm_key": "e6ea4815b03d0c6a"
   },
   {
    "label": "llama3.1:8b",
@@ -116,8 +116,8 @@
    "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
    "first_seen": "2026-10-02T10:56:20+00:00",
    "slug": "llama3.1_8b",
-   "triage_key": "c86eed719f5b8535",
-   "confirm_key": "7dfa2884af855572"
+   "triage_key": "cbf8bb65f019eae1",
+   "confirm_key": "246d7404f2f1fbb3"
   },
   {
    "label": "ministral-3:8b",
@@ -128,8 +128,8 @@
    "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
    "first_seen": "2026-10-02T10:56:20+00:00",
    "slug": "ministral-3_8b",
-   "triage_key": "4c2c49ca67f6c10f",
-   "confirm_key": "d6ba7e49aedca737"
+   "triage_key": "b054c271b37bd7e4",
+   "confirm_key": "9728e5d3ade7953f"
   },
   {
    "label": "phi4-mini:3.8b",
@@ -140,8 +140,8 @@
    "digest": "78fad5d182a7c33065e153a5f8ba210754207ba9d91973f57dffa7f487363753",
    "first_seen": "2026-10-02T10:56:20+00:00",
    "slug": "phi4-mini_3.8b",
-   "triage_key": "054ece5192fcc94a",
-   "confirm_key": "82d678614bc937c4"
+   "triage_key": "1672b34ee76abe0f",
+   "confirm_key": "14edf3acd5583118"
   },
   {
    "label": "qwen3:1.7b",
@@ -157,8 +157,8 @@
    "experiment": false,
    "first_seen": "2026-10-02T10:56:20+00:00",
    "slug": "qwen3_1.7b",
-   "triage_key": "15bf90c5134b6a3f",
-   "confirm_key": "4676b97e7fe85e5f"
+   "triage_key": "50214b6d35438ec4",
+   "confirm_key": "7b7501f7ca329aac"
   },
   {
    "label": "qwen3:4b-q4_K_M",
@@ -174,25 +174,25 @@
    "experiment": false,
    "first_seen": "2026-10-02T10:56:20+00:00",
    "slug": "qwen3_4b-q4_K_M",
-   "triage_key": "63df9b97126f4d4e",
-   "confirm_key": "87948eb73aa6b92a"
+   "triage_key": "e48df09bca090ede",
+   "confirm_key": "af10ac0fa43391ec"
   },
   {
    "label": "qwen3.5:0.8b",
    "backend": "ollama",
    "model": "qwen3.5:0.8b",
    "size_gb": 1.04,
-   "digest": "f3817196d142eaf72ce79dfebe53dcb20bd21da87ce13e138a8f8e10a866b3a4",
+   "digest": "de63045f29755d4721c09d54c9b45c2dadb644f4fd7d604d4cac90d96049971c",
    "source": "discovered",
    "discovered_at": "2026-10-02T10:56:20+00:00",
    "options": {
     "think": false
    },
    "experiment": false,
-   "first_seen": "2026-10-02T10:56:20+00:00",
+   "first_seen": "2026-10-24T08:43:47+00:00",
    "slug": "qwen3.5_0.8b",
-   "triage_key": "4905e5bcfb6db806",
-   "confirm_key": "ca7ee45ffcf2d357"
+   "triage_key": "1b7f715bdbf7797c",
+   "confirm_key": "6497fa9de22c91fd"
   }
  ],
  "unavailable": [],
@@ -200,8 +200,8 @@
  "only": [],
  "finalists": [
   "llama3.1:8b",
+  "gemma3:4b",
   "ministral-3:8b",
-  "gemma3:12b",
   "qwen3:8b"
  ]
 }
