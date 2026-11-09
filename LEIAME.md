@@ -2,7 +2,7 @@
 
 [![Tests](https://github.com/lsp3cesarschool/5ltep-layer1-modeltest/actions/workflows/tests.yml/badge.svg)](https://github.com/lsp3cesarschool/5ltep-layer1-modeltest/actions/workflows/tests.yml) [![modelo recomendado](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flsp3cesarschool%2F5ltep-layer1-modeltest%2Fmain%2Fresults%2Fstatus.pt.json)](results/recommendation.json) [![Licença: MIT](https://img.shields.io/badge/Licen%C3%A7a-MIT-blue.svg)](LICENSE)
 
-[English](README.md) · **Português**
+[← Plataforma CUPIM](https://5ltep-cupim.github.io/?lang=pt) · [English](README.md) · **Português**
 
 **Qual LLM local transforma melhor um dicionário de dados em PDF numa lista de campos, num runner de
 CPU gratuito?** Este repositório mede isso todo mês para o

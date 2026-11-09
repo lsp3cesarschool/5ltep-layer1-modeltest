@@ -2,7 +2,7 @@
 
 [![Tests](https://github.com/lsp3cesarschool/5ltep-layer1-modeltest/actions/workflows/tests.yml/badge.svg)](https://github.com/lsp3cesarschool/5ltep-layer1-modeltest/actions/workflows/tests.yml) [![recommended model](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flsp3cesarschool%2F5ltep-layer1-modeltest%2Fmain%2Fresults%2Fstatus.json)](results/recommendation.json) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-**English** · [Português](LEIAME.md)
+[← CUPIM platform](https://5ltep-cupim.github.io/?lang=en) · **English** · [Português](LEIAME.md)
 
 **Which local LLM best turns a PDF data dictionary into a field list, on a free CPU runner?** This
 repository measures it every month for [5ltep-layer1](https://github.com/lsp3cesarschool/5ltep-layer1)
